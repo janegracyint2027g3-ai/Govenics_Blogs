@@ -1,543 +1,1050 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GOVENICS Knowledge Centre – Enterprise E-Book Library | GRC Advisory</title>
-    <meta name="description" content="Access McKinsey & Big-4 caliber enterprise GRC E-books covering Regulatory Compliance, Corporate Governance, CISO Cyber Resilience, Labour Codes, and ESG.">
-    <link rel="canonical" href="https://govenics.com/resources/ebooks">
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <style>
-        .ebook-card {
-            background: #ffffff;
-            border: 1px solid #e2e8f0;
-            border-radius: 10px;
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-            transition: all 0.25s ease;
-        }
-        .ebook-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 12px 20px -5px rgba(0, 0, 0, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.04);
-            border-color: #cbd5e1;
-        }
-        .ebook-card-cover {
-            background: linear-gradient(135deg, #0a192f 0%, #0c2d9c 100%);
-            color: #ffffff;
-            padding: 2rem 1.5rem;
-            position: relative;
-            border-bottom: 3px solid #38bdf8;
-        }
-        .ebook-card-cover h3 {
-            font-size: 1.15rem;
-            font-weight: 700;
-            line-height: 1.35;
-            color: #ffffff;
-            margin: 0.5rem 0 0 0;
-            font-family: 'Plus Jakarta Sans', sans-serif;
-        }
-        .ebook-card-body {
-            padding: 1.5rem;
-            display: flex;
-            flex-direction: column;
-            flex-grow: 1;
-        }
-        .ebook-card-meta {
-            display: flex;
-            justify-content: space-between;
-            font-size: 0.75rem;
-            color: #64748b;
-            margin-bottom: 0.85rem;
-        }
-        .tag-pill {
-            display: inline-block;
-            background: #e0f2fe;
-            color: #0369a1;
-            font-size: 0.7rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            padding: 0.2rem 0.5rem;
-            border-radius: 4px;
-        }
-        .btn-read {
-            display: block;
-            text-align: center;
-            background: #0c2d9c;
-            color: #ffffff;
-            font-weight: 600;
-            padding: 0.65rem 1rem;
-            border-radius: 6px;
-            text-decoration: none;
-            font-size: 0.85rem;
-            transition: background 0.2s ease;
-        }
-        .btn-read:hover {
-            background: #1d4ed8;
-        }
-        .btn-preview {
-            display: block;
-            text-align: center;
-            background: #f1f5f9;
-            color: #334155;
-            font-weight: 600;
-            padding: 0.65rem 1rem;
-            border-radius: 6px;
-            text-decoration: none;
-            font-size: 0.85rem;
-            border: 1px solid #cbd5e1;
-            transition: background 0.2s ease;
-        }
-        .btn-preview:hover {
-            background: #e2e8f0;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Executive E-Book Library | GOVENICS Enterprise GRC Consulting</title>
+  <meta name="description" content="McKinsey & Big-4 grade statutory defensibility blueprints, C-suite compliance roadmaps, and audit guides for multi-entity holding groups.">
+  <link rel="canonical" href="https://govenicsblogs.vercel.app/resources/ebooks">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body class="bg-slate-50 text-slate-800">
-    
-    <!-- Top Content Type Switcher Bar -->
-    <div class="content-type-switch-bar">
-      <div class="switch-container">
-        <div class="content-switcher-tabs">
-          <span style="font-weight:700; color:#94A3B8; font-size:11px; text-transform:uppercase; letter-spacing:0.05em; margin-right:4px;">VIEW FORMAT:</span>
-          <a href="/" class="switch-tab">
-            <span>📝 Practice Blogs</span>
-            <span class="tab-badge">78 Articles</span>
-          </a>
-          <a href="/resources/ebooks" class="switch-tab active">
-            <span>📚 Executive E-Books</span>
-            <span class="tab-badge">13 Editions</span>
-          </a>
-        </div>
-        <div>
-          <button onclick="toggleSideDrawer(true)" class="side-drawer-toggle">
-            <span>📂 All Knowledge Topics & Practice Areas</span>
-            <span>☰</span>
-          </button>
-        </div>
+
+  <!-- Top Content Type Switcher Bar -->
+  <div class="content-type-switch-bar">
+    <div class="switch-container">
+      <div class="content-switcher-tabs">
+        <span style="font-weight:700; color:#94A3B8; font-size:11px; text-transform:uppercase; letter-spacing:0.05em; margin-right:4px;">VIEW FORMAT:</span>
+        <a href="/" class="switch-tab">
+          <span>📝 Practice Blogs</span>
+          <span class="tab-badge">78 Articles</span>
+        </a>
+        <a href="/resources/ebooks" class="switch-tab active">
+          <span>📚 Executive E-Books</span>
+          <span class="tab-badge">13 Editions</span>
+        </a>
+      </div>
+      <div>
+        <button onclick="toggleSideDrawer(true)" class="side-drawer-toggle">
+          <span>📂 All Knowledge Topics & Practice Areas</span>
+          <span>☰</span>
+        </button>
       </div>
     </div>
+  </div>
 
-    <header class="border-b bg-white/95 backdrop-blur sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
-            <a href="/" class="flex items-center gap-2 text-decoration-none">
-                <span class="font-bold text-xl tracking-tight text-slate-900">GOVENICS <span class="text-blue-700 text-sm font-semibold">KNOWLEDGE HUB</span></span>
-            </a>
-            <div class="flex items-center gap-4">
-                <a href="/resources/ebooks" class="text-sm font-bold text-blue-700">E-book Library</a>
-                <a href="/" class="text-sm font-medium text-slate-600 hover:text-slate-900">Thought Leadership</a>
-                <a href="https://govnics-murex.vercel.app/" target="_blank" class="text-xs bg-slate-100 hover:bg-slate-200 px-3 py-1.5 rounded font-medium text-slate-700">Official Portal ↗</a>
-            </div>
+  <!-- Main Navigation -->
+  <header class="gov-nav">
+    <div class="nav-container">
+      <div class="nav-logo-group">
+        <a href="/">
+          <img src="/assets/images/logo.png" alt="GOVENICS Logo" class="nav-logo">
+        </a>
+        <div class="nav-divider"></div>
+        <div>
+          <div class="nav-brand-title">GOVENICS Executive Publications</div>
+          <div class="nav-heritage">A Division of ISI Group | Established 1985</div>
         </div>
-    </header>
+      </div>
+      <nav class="nav-links">
+        <a href="/" style="font-weight:600; color:#334155;">📝 Practice Blogs (78)</a>
+        <a href="/resources/ebooks" style="font-weight:800; color:var(--eb-royal);">📚 E-Books Library (13)</a>
+        <a href="https://govnics-murex.vercel.app/" target="_blank">Official Website</a>
+        <button onclick="toggleSideDrawer(true)" class="side-drawer-toggle" style="margin-left:8px;">
+          <span>Browse Panel ☰</span>
+        </button>
+      </nav>
+    </div>
+  </header>
 
-    <main>
-        <!-- Hero Section -->
-        <section class="bg-gradient-to-r from-slate-950 via-slate-900 to-blue-950 text-white py-16 px-4 border-b border-slate-800">
-            <div class="max-w-7xl mx-auto text-center">
-                <div class="inline-block bg-blue-500/20 text-blue-400 text-xs px-3 py-1 rounded-full font-bold uppercase tracking-widest mb-4 border border-blue-500/30">
-                    EXECUTIVE RESEARCH & PRACTITIONER HANDBOOKS
-                </div>
-                <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight mb-4 font-['Plus_Jakarta_Sans']">
-                    GOVENICS Enterprise E-Book Library
-                </h1>
-                <p class="text-base md:text-lg text-slate-300 max-w-3xl mx-auto mb-8 font-light leading-relaxed">
-                    Defensibility blueprints, statutory audit roadmaps, and regulatory frameworks tailored for CFOs, CISOs, CHROs, and Board Directors of complex multi-entity holding groups.
-                </p>
-                <div class="flex flex-wrap justify-center gap-6 text-xs text-slate-400">
-                    <span class="flex items-center gap-1.5">✓ <strong>13 Complete Editions</strong></span>
-                    <span class="flex items-center gap-1.5">✓ <strong>450+ Verified Pages</strong></span>
-                    <span class="flex items-center gap-1.5">✓ <strong>Standard Frameworks & Checklists</strong></span>
-                    <span class="flex items-center gap-1.5">✓ <strong>Free Instant Access</strong></span>
-                </div>
+  <!-- Hero Section -->
+  <section class="hub-hero" style="background: linear-gradient(135deg, #050B17 0%, #0B1B3D 55%, #153A85 100%); padding: 64px 20px 72px 20px; text-align: center; color: #FFFFFF; position: relative;">
+    <div style="max-width: 960px; margin: 0 auto; position: relative; z-index: 2;">
+      <span class="hero-badge" style="background: rgba(56, 189, 248, 0.15); border: 1px solid rgba(56, 189, 248, 0.35); color: #38BDF8; font-weight: 800; letter-spacing: 0.1em; padding: 5px 14px; border-radius: 20px; font-size: 11px; text-transform: uppercase; display: inline-block; margin-bottom: 16px;">
+        EXECUTIVE RESEARCH & PRACTITIONER HANDBOOKS &bull; 13 VOLUMES
+      </span>
+      <h1 style="font-family: 'Plus Jakarta Sans', sans-serif; font-size: 38px; font-weight: 800; line-height: 1.25; margin-bottom: 16px; letter-spacing: -0.5px;">
+        GOVENICS Enterprise E-Book Library
+      </h1>
+      <p style="font-size: 16.5px; line-height: 1.6; color: #CBD5E1; max-width: 780px; margin: 0 auto 28px auto; font-weight: 400;">
+        Boardroom defensibility blueprints, statutory audit roadmaps, and multi-entity regulatory frameworks authored for Group CFOs, CISOs, CHROs, and Corporate Governance leadership.
+      </p>
+      <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 24px; font-size: 13px; color: #94A3B8; border-top: 1px solid rgba(255, 255, 255, 0.1); padding-top: 20px;">
+        <span style="display:flex; align-items:center; gap:6px;"><strong style="color:#FFF;">✓ 13 Specialized Editions</strong></span>
+        <span style="display:flex; align-items:center; gap:6px;"><strong style="color:#FFF;">✓ 450+ Verified Pages</strong></span>
+        <span style="display:flex; align-items:center; gap:6px;"><strong style="color:#FFF;">✓ Standard Checklists & Roadmaps</strong></span>
+        <span style="display:flex; align-items:center; gap:6px;"><strong style="color:#FFF;">✓ 100% Free Executive Access</strong></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- In-Page Format Switcher -->
+  <div class="hub-content-toggle-wrap">
+    <div class="hub-content-toggle">
+      <a href="/" class="hub-toggle-btn">
+        <span>📝 Practice Blogs & Articles</span>
+        <span class="btn-counter">78 Articles</span>
+      </a>
+      <a href="/resources/ebooks" class="hub-toggle-btn active">
+        <span>📚 Executive E-Book Library</span>
+        <span class="btn-counter">13 Editions</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Search & Filter Controls -->
+  <section style="max-width: 1240px; margin: 0 auto 32px auto; padding: 0 20px;">
+    <div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 12px; padding: 18px 24px; display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; align-items: center; box-shadow: 0 2px 8px rgba(11,27,61,0.04);">
+      <div style="flex: 1; min-width: 280px; position: relative;">
+        <input type="text" id="ebookSearchInput" placeholder="Search e-books by practice, regulation, or C-suite persona (e.g. CFO, DPDP, Labour)..." 
+               style="width: 100%; padding: 10px 14px 10px 38px; font-size: 13.5px; border: 1px solid #CBD5E1; border-radius: 8px; outline: none; transition: border-color 0.2s;"
+               onfocus="this.style.borderColor='var(--eb-royal)'" onblur="this.style.borderColor='#CBD5E1'">
+        <span style="position: absolute; left: 14px; top: 11px; font-size: 14px; color: #94A3B8;">🔍</span>
+      </div>
+      <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+        <button class="filter-btn active text-xs font-semibold px-3 py-1.5 rounded-full border border-blue-700 bg-blue-700 text-white cursor-pointer" data-filter="all">All 13 Volumes</button>
+        <button class="filter-btn text-xs font-semibold px-3 py-1.5 rounded-full border border-slate-300 bg-slate-50 text-slate-700 hover:bg-slate-100 cursor-pointer" data-filter="governance">Governance & CFO</button>
+        <button class="filter-btn text-xs font-semibold px-3 py-1.5 rounded-full border border-slate-300 bg-slate-50 text-slate-700 hover:bg-slate-100 cursor-pointer" data-filter="cyber">Cyber & CISO</button>
+        <button class="filter-btn text-xs font-semibold px-3 py-1.5 rounded-full border border-slate-300 bg-slate-50 text-slate-700 hover:bg-slate-100 cursor-pointer" data-filter="industrial">Industrial & EHS</button>
+        <button class="filter-btn text-xs font-semibold px-3 py-1.5 rounded-full border border-slate-300 bg-slate-50 text-slate-700 hover:bg-slate-100 cursor-pointer" data-filter="trade">Trade & Tax</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3D E-Book Cards Grid -->
+  <main style="max-width: 1240px; margin: 0 auto; padding: 0 20px 80px 20px;">
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px;">
+      <div>
+        <h2 style="font-family: 'Plus Jakarta Sans', sans-serif; font-size: 22px; font-weight: 800; color: #0B1B3D;">
+          All Published Executive E-Books
+        </h2>
+        <p style="font-size: 13px; color: #64748B;">Comprehensive research compendiums ready for online reading and PDF export.</p>
+      </div>
+      <span id="ebookCountDisplay" style="font-size: 12px; font-weight: 700; background: #EFF6FF; color: #1D4ED8; padding: 4px 10px; border-radius: 20px;">
+        13 Publications
+      </span>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 28px;" id="ebookGrid">
+
+      <article class="ebook-3d-card" data-category="governance" data-title="enterprise regulatory compliance blueprint regulatory compliance advisory chief compliance officers, general counsel, head of regulatory affairs">
+        <!-- 3D Book Cover / Spine Header -->
+        <div class="book-spine-wrapper">
+          <div>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <span class="book-badge-edition">2026 Enterprise Edition</span>
+              <span class="book-gold-seal">★ Verified GRC</span>
             </div>
-        </section>
-
-        <!-- Prominent In-Page Toggle Switcher -->
-        <div class="hub-content-toggle-wrap" style="margin-top:-28px; margin-bottom:20px;">
-          <div class="hub-content-toggle">
-            <a href="/" class="hub-toggle-btn">
-              <span>📝 Practice Blogs & Articles</span>
-              <span class="btn-counter">78 Articles</span>
-            </a>
-            <a href="/resources/ebooks" class="hub-toggle-btn active">
-              <span>📚 Executive E-Book Library</span>
-              <span class="btn-counter">13 Editions</span>
-            </a>
+            <div style="font-size: 11px; font-weight: 700; color: #94A3B8; text-transform: uppercase; letter-spacing: 0.05em; margin-top: 12px;">
+              Regulatory Compliance Advisory
+            </div>
+            <h3 class="book-cover-title">
+              Enterprise Regulatory Compliance Blueprint
+            </h3>
+          </div>
+          <div class="book-cover-meta-row">
+            <span>By GOVENICS Regulatory Practice Group</span>
+            <span>Vol. 2026.1</span>
           </div>
         </div>
 
-        <!-- Search & Filter Controls -->
-        <section class="py-8 bg-white border-b border-slate-200 px-4">
-            <div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-4 items-center justify-between">
-                <div class="w-full md:w-1/2 relative">
-                    <input type="text" id="ebookSearchInput" placeholder="Search by topic, regulation, role, or offering..." 
-                           class="w-full pl-10 pr-4 py-2.5 text-sm border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent">
-                    <span class="absolute left-3.5 top-3 text-slate-400 text-sm">🔍</span>
-                </div>
-                <div class="flex flex-wrap gap-2 w-full md:w-auto">
-                    <button class="filter-btn active text-xs font-semibold px-3 py-1.5 rounded-full border border-blue-700 bg-blue-700 text-white" data-filter="all">All E-books</button>
-                    <button class="filter-btn text-xs font-semibold px-3 py-1.5 rounded-full border border-slate-300 bg-slate-50 text-slate-700 hover:bg-slate-100" data-filter="governance">Governance & CFO</button>
-                    <button class="filter-btn text-xs font-semibold px-3 py-1.5 rounded-full border border-slate-300 bg-slate-50 text-slate-700 hover:bg-slate-100" data-filter="cyber">Cyber & CISO</button>
-                    <button class="filter-btn text-xs font-semibold px-3 py-1.5 rounded-full border border-slate-300 bg-slate-50 text-slate-700 hover:bg-slate-100" data-filter="industrial">Industrial & EHS</button>
-                    <button class="filter-btn text-xs font-semibold px-3 py-1.5 rounded-full border border-slate-300 bg-slate-50 text-slate-700 hover:bg-slate-100" data-filter="trade">Trade & Tax</button>
-                </div>
-            </div>
-        </section>
+        <!-- Book Metadata & Description -->
+        <div class="ebook-card-content">
+          <div class="ebook-persona-tag">
+            <span>🎯 Target:</span>
+            <span>Chief Compliance Officers</span>
+          </div>
 
-        <!-- E-books Catalog Grid -->
-        <section class="py-12 px-4 max-w-7xl mx-auto">
-            <div class="flex justify-between items-center mb-6">
-                <h2 class="text-xl font-bold text-slate-900">All Published E-Books (13 Editions)</h2>
-                <span class="text-xs text-slate-500">Showing 13 Research Publications</span>
-            </div>
+          <p class="ebook-synopsis">
+            An executive-grade operational blueprint designed for enterprise compliance leaders managing complex statutory audits, regulatory inspections, multi-jurisdictional register maintenance, and automated defensibility systems.
+          </p>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="ebookGrid">
-
-                <div class="ebook-card" data-category="governance" data-title="enterprise regulatory compliance blueprint regulatory compliance advisory chief compliance officers, general counsel, head of regulatory affairs">
-                    <div class="ebook-card-cover">
-                        <div class="text-[10px] font-bold text-sky-400 uppercase tracking-widest">Regulatory Compliance Advisory</div>
-                        <h3>Enterprise Regulatory Compliance Blueprint</h3>
-                    </div>
-                    <div class="ebook-card-body">
-                        <div class="ebook-card-meta">
-                            <span>📄 36 Pages</span>
-                            <span>🎯 Chief Compliance Officers</span>
-                        </div>
-                        <p class="text-xs text-slate-600 line-clamp-3 mb-4 leading-relaxed">
-                            An executive-grade operational blueprint designed for enterprise compliance leaders managing complex statutory audits, regulatory inspections, multi-jurisdictional register maintenance, and automated defensibility systems.
-                        </p>
-                        <div class="mt-auto flex flex-col gap-2 pt-2 border-t border-slate-100">
-                            <a href="/ebooks/regulatory-compliance-blueprint.html" class="btn-read">
-                                Read Full E-Book Online →
-                            </a>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="ebook-card" data-category="governance" data-title="the cfo's guide to corporate governance & multi-entity risk enterprise corporate governance (cfo suite) chief financial officers, group controllers, company secretaries">
-                    <div class="ebook-card-cover">
-                        <div class="text-[10px] font-bold text-sky-400 uppercase tracking-widest">Enterprise Corporate Governance (CFO Suite)</div>
-                        <h3>The CFO's Guide to Corporate Governance & Multi-Entity Risk</h3>
-                    </div>
-                    <div class="ebook-card-body">
-                        <div class="ebook-card-meta">
-                            <span>📄 42 Pages</span>
-                            <span>🎯 Chief Financial Officers</span>
-                        </div>
-                        <p class="text-xs text-slate-600 line-clamp-3 mb-4 leading-relaxed">
-                            A strategic governance handbook designed for Group CFOs and Finance Controllers of multi-entity conglomerates. Learn how to centralize corporate governance, manage subsidiary liability, and present audit-defensible reporting to the Board.
-                        </p>
-                        <div class="mt-auto flex flex-col gap-2 pt-2 border-t border-slate-100">
-                            <a href="/ebooks/cfo-guide-enterprise-governance.html" class="btn-read">
-                                Read Full E-Book Online →
-                            </a>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="ebook-card" data-category="cyber" data-title="enterprise data privacy & cyber resilience handbook cybersecurity & data protection (ciso suite) chief information security officers, data protection officers, cios">
-                    <div class="ebook-card-cover">
-                        <div class="text-[10px] font-bold text-sky-400 uppercase tracking-widest">Cybersecurity & Data Protection (CISO Suite)</div>
-                        <h3>Enterprise Data Privacy & Cyber Resilience Handbook</h3>
-                    </div>
-                    <div class="ebook-card-body">
-                        <div class="ebook-card-meta">
-                            <span>📄 38 Pages</span>
-                            <span>🎯 Chief Information Security Officers</span>
-                        </div>
-                        <p class="text-xs text-slate-600 line-clamp-3 mb-4 leading-relaxed">
-                            An actionable guide for CISOs and DPOs addressing rigorous personal data protection statutes, digital forensics defensibility, sovereign data residency, and third-party vendor cyber exposure.
-                        </p>
-                        <div class="mt-auto flex flex-col gap-2 pt-2 border-t border-slate-100">
-                            <a href="/ebooks/enterprise-data-privacy-cyber-resilience.html" class="btn-read">
-                                Read Full E-Book Online →
-                            </a>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="ebook-card" data-category="industrial" data-title="strategic labour law & workforce governance guide labour & employment law compliance chief hr officers, industrial relations directors, plant hr heads">
-                    <div class="ebook-card-cover">
-                        <div class="text-[10px] font-bold text-sky-400 uppercase tracking-widest">Labour & Employment Law Compliance</div>
-                        <h3>Strategic Labour Law & Workforce Governance Guide</h3>
-                    </div>
-                    <div class="ebook-card-body">
-                        <div class="ebook-card-meta">
-                            <span>📄 34 Pages</span>
-                            <span>🎯 Chief HR Officers</span>
-                        </div>
-                        <p class="text-xs text-slate-600 line-clamp-3 mb-4 leading-relaxed">
-                            Essential guidance for CHROs and Plant HR Directors navigating reformed national Labour Codes, contract workforce compliance under CLRA, minimum wage reconciliations, and factory safety registers.
-                        </p>
-                        <div class="mt-auto flex flex-col gap-2 pt-2 border-t border-slate-100">
-                            <a href="/ebooks/strategic-labour-law-workforce-governance.html" class="btn-read">
-                                Read Full E-Book Online →
-                            </a>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="ebook-card" data-category="trade" data-title="the enterprise esg & brsr governance playbook esg & sustainability advisory chief sustainability officers, head of investor relations, esg committees">
-                    <div class="ebook-card-cover">
-                        <div class="text-[10px] font-bold text-sky-400 uppercase tracking-widest">ESG & Sustainability Advisory</div>
-                        <h3>The Enterprise ESG & BRSR Governance Playbook</h3>
-                    </div>
-                    <div class="ebook-card-body">
-                        <div class="ebook-card-meta">
-                            <span>📄 40 Pages</span>
-                            <span>🎯 Chief Sustainability Officers</span>
-                        </div>
-                        <p class="text-xs text-slate-600 line-clamp-3 mb-4 leading-relaxed">
-                            Comprehensive implementation guide for sustainability officers preparing auditable BRSR Core filings, calculating Scope 1, 2, and 3 emissions, and setting up defensible sustainability metrics for institutional investors.
-                        </p>
-                        <div class="mt-auto flex flex-col gap-2 pt-2 border-t border-slate-100">
-                            <a href="/ebooks/enterprise-esg-brsr-governance-playbook.html" class="btn-read">
-                                Read Full E-Book Online →
-                            </a>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="ebook-card" data-category="trade" data-title="enterprise tax risk management & cross-border trade taxation & trade advisory chief financial officers, head of taxation, vp global trade">
-                    <div class="ebook-card-cover">
-                        <div class="text-[10px] font-bold text-sky-400 uppercase tracking-widest">Taxation & Trade Advisory</div>
-                        <h3>Enterprise Tax Risk Management & Cross-Border Trade</h3>
-                    </div>
-                    <div class="ebook-card-body">
-                        <div class="ebook-card-meta">
-                            <span>📄 36 Pages</span>
-                            <span>🎯 Chief Financial Officers</span>
-                        </div>
-                        <p class="text-xs text-slate-600 line-clamp-3 mb-4 leading-relaxed">
-                            A deep dive into strategic tax risk governance, input tax credit (ITC) reconciliation defensibility, transfer pricing documentation, and customs compliance for enterprise operations.
-                        </p>
-                        <div class="mt-auto flex flex-col gap-2 pt-2 border-t border-slate-100">
-                            <a href="/ebooks/enterprise-tax-statutory-trade-advisory.html" class="btn-read">
-                                Read Full E-Book Online →
-                            </a>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="ebook-card" data-category="industrial" data-title="industrial ehs & environmental regulatory defensibility environmental & ehs advisory vp manufacturing, head of ehs, plant operations directors">
-                    <div class="ebook-card-cover">
-                        <div class="text-[10px] font-bold text-sky-400 uppercase tracking-widest">Environmental & EHS Advisory</div>
-                        <h3>Industrial EHS & Environmental Regulatory Defensibility</h3>
-                    </div>
-                    <div class="ebook-card-body">
-                        <div class="ebook-card-meta">
-                            <span>📄 38 Pages</span>
-                            <span>🎯 VP Manufacturing</span>
-                        </div>
-                        <p class="text-xs text-slate-600 line-clamp-3 mb-4 leading-relaxed">
-                            An operational manual for manufacturing leaders to manage Pollution Control Board consents, hazardous effluent tracking, OSHA safety guidelines, and unannounced environmental inspections.
-                        </p>
-                        <div class="mt-auto flex flex-col gap-2 pt-2 border-t border-slate-100">
-                            <a href="/ebooks/industrial-ehs-regulatory-compliance-guide.html" class="btn-read">
-                                Read Full E-Book Online →
-                            </a>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="ebook-card" data-category="trade" data-title="supply chain & third-party vendor risk governance supply chain & vendor governance chief procurement officers, head of vendor risk, vp supply chain">
-                    <div class="ebook-card-cover">
-                        <div class="text-[10px] font-bold text-sky-400 uppercase tracking-widest">Supply Chain & Vendor Governance</div>
-                        <h3>Supply Chain & Third-Party Vendor Risk Governance</h3>
-                    </div>
-                    <div class="ebook-card-body">
-                        <div class="ebook-card-meta">
-                            <span>📄 36 Pages</span>
-                            <span>🎯 Chief Procurement Officers</span>
-                        </div>
-                        <p class="text-xs text-slate-600 line-clamp-3 mb-4 leading-relaxed">
-                            How enterprise procurement and compliance leaders eliminate third-party compliance blind spots, conduct automated vendor audits, and insulate operations from supplier insolvency and reputational damage.
-                        </p>
-                        <div class="mt-auto flex flex-col gap-2 pt-2 border-t border-slate-100">
-                            <a href="/ebooks/enterprise-supply-chain-vendor-governance.html" class="btn-read">
-                                Read Full E-Book Online →
-                            </a>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="ebook-card" data-category="trade" data-title="global trade, export controls & sanctions compliance export & global trade advisory vp global trade, export compliance officers, head of international logistics">
-                    <div class="ebook-card-cover">
-                        <div class="text-[10px] font-bold text-sky-400 uppercase tracking-widest">Export & Global Trade Advisory</div>
-                        <h3>Global Trade, Export Controls & Sanctions Compliance</h3>
-                    </div>
-                    <div class="ebook-card-body">
-                        <div class="ebook-card-meta">
-                            <span>📄 34 Pages</span>
-                            <span>🎯 VP Global Trade</span>
-                        </div>
-                        <p class="text-xs text-slate-600 line-clamp-3 mb-4 leading-relaxed">
-                            Essential strategic guidance for exporters navigating complex dual-use technology classifications (SCOMET/EAR), multilateral sanctions compliance, end-user verification, and customs audit readiness.
-                        </p>
-                        <div class="mt-auto flex flex-col gap-2 pt-2 border-t border-slate-100">
-                            <a href="/ebooks/global-trade-export-controls-sanctions.html" class="btn-read">
-                                Read Full E-Book Online →
-                            </a>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="ebook-card" data-category="industrial" data-title="enterprise licensing & statutory permits management licensing & permits management head of corporate real estate, vp operations, compliance operations managers">
-                    <div class="ebook-card-cover">
-                        <div class="text-[10px] font-bold text-sky-400 uppercase tracking-widest">Licensing & Permits Management</div>
-                        <h3>Enterprise Licensing & Statutory Permits Management</h3>
-                    </div>
-                    <div class="ebook-card-body">
-                        <div class="ebook-card-meta">
-                            <span>📄 32 Pages</span>
-                            <span>🎯 Head of Corporate Real Estate</span>
-                        </div>
-                        <p class="text-xs text-slate-600 line-clamp-3 mb-4 leading-relaxed">
-                            A comprehensive operational framework for multi-site organizations to track, renew, and defend hundreds of municipal, fire, environmental, and operational operating licenses without lapse.
-                        </p>
-                        <div class="mt-auto flex flex-col gap-2 pt-2 border-t border-slate-100">
-                            <a href="/ebooks/enterprise-licensing-statutory-permits-guide.html" class="btn-read">
-                                Read Full E-Book Online →
-                            </a>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="ebook-card" data-category="governance" data-title="commercial escrow & m&a governance playbook commercial escrow services chief financial officers, general counsel, private equity operating partners">
-                    <div class="ebook-card-cover">
-                        <div class="text-[10px] font-bold text-sky-400 uppercase tracking-widest">Commercial Escrow Services</div>
-                        <h3>Commercial Escrow & M&A Governance Playbook</h3>
-                    </div>
-                    <div class="ebook-card-body">
-                        <div class="ebook-card-meta">
-                            <span>📄 34 Pages</span>
-                            <span>🎯 Chief Financial Officers</span>
-                        </div>
-                        <p class="text-xs text-slate-600 line-clamp-3 mb-4 leading-relaxed">
-                            Essential guidance for dealmakers, CFOs, and general counsel on leveraging neutral escrow architectures to safeguard M&A indemnity funds, IP transfers, project milestones, and regulatory deposits.
-                        </p>
-                        <div class="mt-auto flex flex-col gap-2 pt-2 border-t border-slate-100">
-                            <a href="/ebooks/commercial-escrow-m-and-a-statutory-governance.html" class="btn-read">
-                                Read Full E-Book Online →
-                            </a>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="ebook-card" data-category="governance" data-title="enterprise risk management & board oversight handbook enterprise risk management (cro suite) chief risk officers, vp internal audit, board risk committee members">
-                    <div class="ebook-card-cover">
-                        <div class="text-[10px] font-bold text-sky-400 uppercase tracking-widest">Enterprise Risk Management (CRO Suite)</div>
-                        <h3>Enterprise Risk Management & Board Oversight Handbook</h3>
-                    </div>
-                    <div class="ebook-card-body">
-                        <div class="ebook-card-meta">
-                            <span>📄 40 Pages</span>
-                            <span>🎯 Chief Risk Officers</span>
-                        </div>
-                        <p class="text-xs text-slate-600 line-clamp-3 mb-4 leading-relaxed">
-                            An executive methodology for Chief Risk Officers to institutionalize COSO and ISO 31000 frameworks, quantify strategic and operational risks, and embed dynamic risk scoring into business decisions.
-                        </p>
-                        <div class="mt-auto flex flex-col gap-2 pt-2 border-t border-slate-100">
-                            <a href="/ebooks/enterprise-risk-management-cro-handbook.html" class="btn-read">
-                                Read Full E-Book Online →
-                            </a>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="ebook-card" data-category="industrial" data-title="managed compliance & outsourced grc operations staffing & managed compliance chief operating officers, chief hr officers, vp shared services">
-                    <div class="ebook-card-cover">
-                        <div class="text-[10px] font-bold text-sky-400 uppercase tracking-widest">Staffing & Managed Compliance</div>
-                        <h3>Managed Compliance & Outsourced GRC Operations</h3>
-                    </div>
-                    <div class="ebook-card-body">
-                        <div class="ebook-card-meta">
-                            <span>📄 32 Pages</span>
-                            <span>🎯 Chief Operating Officers</span>
-                        </div>
-                        <p class="text-xs text-slate-600 line-clamp-3 mb-4 leading-relaxed">
-                            How leading enterprises eliminate internal compliance bottlenecks by deploying embedded GRC specialists, managed statutory filing pods, and high-velocity compliance shared service centers.
-                        </p>
-                        <div class="mt-auto flex flex-col gap-2 pt-2 border-t border-slate-100">
-                            <a href="/ebooks/managed-compliance-outsourced-grc-operations.html" class="btn-read">
-                                Read Full E-Book Online →
-                            </a>
-                        </div>
-                    </div>
-                </div>
-    
+          <!-- Executive Metrics Grid -->
+          <div class="ebook-stats-pills">
+            <div class="stat-pill-item">
+              <span class="stat-pill-num">36 Pages</span>
+              <span class="stat-pill-label">Print Length</span>
             </div>
-        </section>
-
-        <!-- Bottom Consultation Banner -->
-        <section class="bg-slate-900 text-white py-16 px-4">
-            <div class="max-w-4xl mx-auto text-center">
-                <h2 class="text-2xl md:text-3xl font-bold mb-3 font-['Plus_Jakarta_Sans']">Need Custom Regulatory Governance Support?</h2>
-                <p class="text-sm text-slate-400 mb-6 max-w-xl mx-auto">
-                    GOVENICS advisory partners deliver bespoke diagnostic audits, statutory registers automation, and boardroom risk defensibility frameworks across 14 industry sectors.
-                </p>
-                <a href="https://govnics-murex.vercel.app/" target="_blank" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg text-sm transition">
-                    Request an Enterprise GRC Assessment →
-                </a>
+            <div class="stat-pill-item">
+              <span class="stat-pill-num">9 Chapters</span>
+              <span class="stat-pill-label">Deep Dives</span>
             </div>
-        </section>
-    </main>
-
-    <footer class="bg-slate-950 text-slate-400 py-10 border-t border-slate-800">
-        <div class="max-w-7xl mx-auto px-4 text-center">
-            <p class="text-xs text-slate-400 font-medium mb-2">GOVENICS GRC Consulting • A Division of ISI Group • Established 1985</p>
-            <div class="flex justify-center gap-6 text-xs text-slate-500 mt-4">
-                <a href="/" class="hover:text-white">Blog Hub</a>
-                <a href="/resources/ebooks" class="hover:text-white">E-book Library</a>
-                <a href="https://govnics-murex.vercel.app/" class="hover:text-white" target="_blank">Enterprise Portal</a>
-                <a href="/sitemap.xml" class="hover:text-white">Sitemap</a>
+            <div class="stat-pill-item">
+              <span class="stat-pill-num">6 Phases</span>
+              <span class="stat-pill-label">Roadmap</span>
             </div>
+          </div>
+
+          <!-- Card Actions -->
+          <div class="ebook-card-actions">
+            <a href="/ebooks/regulatory-compliance-blueprint.html" class="btn-action-primary">
+              Read Full E-Book Online &rarr;
+            </a>
+            <button onclick="openDownloadModal('Enterprise Regulatory Compliance Blueprint')" class="btn-action-outline" title="Download Executive PDF">
+              📥 PDF
+            </button>
+          </div>
         </div>
-    </footer>
+      </article>
+    
+      <article class="ebook-3d-card" data-category="governance" data-title="the cfo's guide to corporate governance & multi-entity risk enterprise corporate governance (cfo suite) chief financial officers, group controllers, company secretaries">
+        <!-- 3D Book Cover / Spine Header -->
+        <div class="book-spine-wrapper">
+          <div>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <span class="book-badge-edition">CFO Strategic Briefing</span>
+              <span class="book-gold-seal">★ Verified GRC</span>
+            </div>
+            <div style="font-size: 11px; font-weight: 700; color: #94A3B8; text-transform: uppercase; letter-spacing: 0.05em; margin-top: 12px;">
+              Enterprise Corporate Governance (CFO Suite)
+            </div>
+            <h3 class="book-cover-title">
+              The CFO's Guide to Corporate Governance & Multi-Entity Risk
+            </h3>
+          </div>
+          <div class="book-cover-meta-row">
+            <span>By GOVENICS CFO & Corporate Governance Advisory</span>
+            <span>Vol. 2026.1</span>
+          </div>
+        </div>
 
-    <script>
-        // Interactive Search & Category Filter
-        const searchInput = document.getElementById('ebookSearchInput');
-        const filterBtns = document.querySelectorAll('.filter-btn');
-        const cards = document.querySelectorAll('.ebook-card');
+        <!-- Book Metadata & Description -->
+        <div class="ebook-card-content">
+          <div class="ebook-persona-tag">
+            <span>🎯 Target:</span>
+            <span>Chief Financial Officers</span>
+          </div>
 
-        let currentFilter = 'all';
+          <p class="ebook-synopsis">
+            A strategic governance handbook designed for Group CFOs and Finance Controllers of multi-entity conglomerates. Learn how to centralize corporate governance, manage subsidiary liability, and present audit-defensible reporting to the Board.
+          </p>
 
-        function filterCards() {
-            const query = searchInput.value.toLowerCase().trim();
-            cards.forEach(card => {
-                const category = card.getAttribute('data-category');
-                const title = card.getAttribute('data-title');
-                const matchesCategory = (currentFilter === 'all' || category === currentFilter);
-                const matchesSearch = (!query || title.includes(query));
+          <!-- Executive Metrics Grid -->
+          <div class="ebook-stats-pills">
+            <div class="stat-pill-item">
+              <span class="stat-pill-num">42 Pages</span>
+              <span class="stat-pill-label">Print Length</span>
+            </div>
+            <div class="stat-pill-item">
+              <span class="stat-pill-num">9 Chapters</span>
+              <span class="stat-pill-label">Deep Dives</span>
+            </div>
+            <div class="stat-pill-item">
+              <span class="stat-pill-num">6 Phases</span>
+              <span class="stat-pill-label">Roadmap</span>
+            </div>
+          </div>
 
-                if (matchesCategory && matchesSearch) {
-                    card.style.display = 'flex';
-                } else {
-                    card.style.display = 'none';
-                }
-            });
-        }
+          <!-- Card Actions -->
+          <div class="ebook-card-actions">
+            <a href="/ebooks/cfo-guide-enterprise-governance.html" class="btn-action-primary">
+              Read Full E-Book Online &rarr;
+            </a>
+            <button onclick="openDownloadModal('The CFO's Guide to Corporate Governance & Multi-Entity Risk')" class="btn-action-outline" title="Download Executive PDF">
+              📥 PDF
+            </button>
+          </div>
+        </div>
+      </article>
+    
+      <article class="ebook-3d-card" data-category="cyber" data-title="enterprise data privacy & cyber resilience handbook cybersecurity & data protection (ciso suite) chief information security officers, data protection officers, cios">
+        <!-- 3D Book Cover / Spine Header -->
+        <div class="book-spine-wrapper">
+          <div>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <span class="book-badge-edition">CISO Statutory Compendium</span>
+              <span class="book-gold-seal">★ Verified GRC</span>
+            </div>
+            <div style="font-size: 11px; font-weight: 700; color: #94A3B8; text-transform: uppercase; letter-spacing: 0.05em; margin-top: 12px;">
+              Cybersecurity & Data Protection (CISO Suite)
+            </div>
+            <h3 class="book-cover-title">
+              Enterprise Data Privacy & Cyber Resilience Handbook
+            </h3>
+          </div>
+          <div class="book-cover-meta-row">
+            <span>By GOVENICS Cybersecurity & Data Privacy Practice</span>
+            <span>Vol. 2026.1</span>
+          </div>
+        </div>
 
-        searchInput.addEventListener('input', filterCards);
+        <!-- Book Metadata & Description -->
+        <div class="ebook-card-content">
+          <div class="ebook-persona-tag">
+            <span>🎯 Target:</span>
+            <span>Chief Information Security Officers</span>
+          </div>
 
-        filterBtns.forEach(btn => {
-            btn.addEventListener('click', () => {
-                filterBtns.forEach(b => {
-                    b.classList.remove('active', 'bg-blue-700', 'text-white', 'border-blue-700');
-                    b.classList.add('bg-slate-50', 'text-slate-700', 'border-slate-300');
-                });
-                btn.classList.add('active', 'bg-blue-700', 'text-white', 'border-blue-700');
-                btn.classList.remove('bg-slate-50', 'text-slate-700', 'border-slate-300');
-                currentFilter = btn.getAttribute('data-filter');
-                filterCards();
-            });
-        });
-    </script>
+          <p class="ebook-synopsis">
+            An actionable guide for CISOs and DPOs addressing rigorous personal data protection statutes, digital forensics defensibility, sovereign data residency, and third-party vendor cyber exposure.
+          </p>
+
+          <!-- Executive Metrics Grid -->
+          <div class="ebook-stats-pills">
+            <div class="stat-pill-item">
+              <span class="stat-pill-num">38 Pages</span>
+              <span class="stat-pill-label">Print Length</span>
+            </div>
+            <div class="stat-pill-item">
+              <span class="stat-pill-num">9 Chapters</span>
+              <span class="stat-pill-label">Deep Dives</span>
+            </div>
+            <div class="stat-pill-item">
+              <span class="stat-pill-num">6 Phases</span>
+              <span class="stat-pill-label">Roadmap</span>
+            </div>
+          </div>
+
+          <!-- Card Actions -->
+          <div class="ebook-card-actions">
+            <a href="/ebooks/enterprise-data-privacy-cyber-resilience.html" class="btn-action-primary">
+              Read Full E-Book Online &rarr;
+            </a>
+            <button onclick="openDownloadModal('Enterprise Data Privacy & Cyber Resilience Handbook')" class="btn-action-outline" title="Download Executive PDF">
+              📥 PDF
+            </button>
+          </div>
+        </div>
+      </article>
+    
+      <article class="ebook-3d-card" data-category="industrial" data-title="strategic labour law & workforce governance guide labour & employment law compliance chief hr officers, industrial relations directors, plant hr heads">
+        <!-- 3D Book Cover / Spine Header -->
+        <div class="book-spine-wrapper">
+          <div>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <span class="book-badge-edition">Industrial Relations Guide</span>
+              <span class="book-gold-seal">★ Verified GRC</span>
+            </div>
+            <div style="font-size: 11px; font-weight: 700; color: #94A3B8; text-transform: uppercase; letter-spacing: 0.05em; margin-top: 12px;">
+              Labour & Employment Law Compliance
+            </div>
+            <h3 class="book-cover-title">
+              Strategic Labour Law & Workforce Governance Guide
+            </h3>
+          </div>
+          <div class="book-cover-meta-row">
+            <span>By GOVENICS Labour & Industrial Relations Advisory</span>
+            <span>Vol. 2026.1</span>
+          </div>
+        </div>
+
+        <!-- Book Metadata & Description -->
+        <div class="ebook-card-content">
+          <div class="ebook-persona-tag">
+            <span>🎯 Target:</span>
+            <span>Chief HR Officers</span>
+          </div>
+
+          <p class="ebook-synopsis">
+            Essential guidance for CHROs and Plant HR Directors navigating reformed national Labour Codes, contract workforce compliance under CLRA, minimum wage reconciliations, and factory safety registers.
+          </p>
+
+          <!-- Executive Metrics Grid -->
+          <div class="ebook-stats-pills">
+            <div class="stat-pill-item">
+              <span class="stat-pill-num">34 Pages</span>
+              <span class="stat-pill-label">Print Length</span>
+            </div>
+            <div class="stat-pill-item">
+              <span class="stat-pill-num">9 Chapters</span>
+              <span class="stat-pill-label">Deep Dives</span>
+            </div>
+            <div class="stat-pill-item">
+              <span class="stat-pill-num">6 Phases</span>
+              <span class="stat-pill-label">Roadmap</span>
+            </div>
+          </div>
+
+          <!-- Card Actions -->
+          <div class="ebook-card-actions">
+            <a href="/ebooks/strategic-labour-law-workforce-governance.html" class="btn-action-primary">
+              Read Full E-Book Online &rarr;
+            </a>
+            <button onclick="openDownloadModal('Strategic Labour Law & Workforce Governance Guide')" class="btn-action-outline" title="Download Executive PDF">
+              📥 PDF
+            </button>
+          </div>
+        </div>
+      </article>
+    
+      <article class="ebook-3d-card" data-category="trade" data-title="the enterprise esg & brsr governance playbook esg & sustainability advisory chief sustainability officers, head of investor relations, esg committees">
+        <!-- 3D Book Cover / Spine Header -->
+        <div class="book-spine-wrapper">
+          <div>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <span class="book-badge-edition">BRSR Core Assurance Series</span>
+              <span class="book-gold-seal">★ Verified GRC</span>
+            </div>
+            <div style="font-size: 11px; font-weight: 700; color: #94A3B8; text-transform: uppercase; letter-spacing: 0.05em; margin-top: 12px;">
+              ESG & Sustainability Advisory
+            </div>
+            <h3 class="book-cover-title">
+              The Enterprise ESG & BRSR Governance Playbook
+            </h3>
+          </div>
+          <div class="book-cover-meta-row">
+            <span>By GOVENICS ESG & Sustainability Advisory</span>
+            <span>Vol. 2026.1</span>
+          </div>
+        </div>
+
+        <!-- Book Metadata & Description -->
+        <div class="ebook-card-content">
+          <div class="ebook-persona-tag">
+            <span>🎯 Target:</span>
+            <span>Chief Sustainability Officers</span>
+          </div>
+
+          <p class="ebook-synopsis">
+            Comprehensive implementation guide for sustainability officers preparing auditable BRSR Core filings, calculating Scope 1, 2, and 3 emissions, and setting up defensible sustainability metrics for institutional investors.
+          </p>
+
+          <!-- Executive Metrics Grid -->
+          <div class="ebook-stats-pills">
+            <div class="stat-pill-item">
+              <span class="stat-pill-num">40 Pages</span>
+              <span class="stat-pill-label">Print Length</span>
+            </div>
+            <div class="stat-pill-item">
+              <span class="stat-pill-num">9 Chapters</span>
+              <span class="stat-pill-label">Deep Dives</span>
+            </div>
+            <div class="stat-pill-item">
+              <span class="stat-pill-num">6 Phases</span>
+              <span class="stat-pill-label">Roadmap</span>
+            </div>
+          </div>
+
+          <!-- Card Actions -->
+          <div class="ebook-card-actions">
+            <a href="/ebooks/enterprise-esg-brsr-governance-playbook.html" class="btn-action-primary">
+              Read Full E-Book Online &rarr;
+            </a>
+            <button onclick="openDownloadModal('The Enterprise ESG & BRSR Governance Playbook')" class="btn-action-outline" title="Download Executive PDF">
+              📥 PDF
+            </button>
+          </div>
+        </div>
+      </article>
+    
+      <article class="ebook-3d-card" data-category="trade" data-title="enterprise tax risk management & cross-border trade taxation & trade advisory chief financial officers, head of taxation, vp global trade">
+        <!-- 3D Book Cover / Spine Header -->
+        <div class="book-spine-wrapper">
+          <div>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <span class="book-badge-edition">CFO Corporate Tax Review</span>
+              <span class="book-gold-seal">★ Verified GRC</span>
+            </div>
+            <div style="font-size: 11px; font-weight: 700; color: #94A3B8; text-transform: uppercase; letter-spacing: 0.05em; margin-top: 12px;">
+              Taxation & Trade Advisory
+            </div>
+            <h3 class="book-cover-title">
+              Enterprise Tax Risk Management & Cross-Border Trade
+            </h3>
+          </div>
+          <div class="book-cover-meta-row">
+            <span>By GOVENICS Direct & Indirect Tax Advisory</span>
+            <span>Vol. 2026.1</span>
+          </div>
+        </div>
+
+        <!-- Book Metadata & Description -->
+        <div class="ebook-card-content">
+          <div class="ebook-persona-tag">
+            <span>🎯 Target:</span>
+            <span>Chief Financial Officers</span>
+          </div>
+
+          <p class="ebook-synopsis">
+            A deep dive into strategic tax risk governance, input tax credit (ITC) reconciliation defensibility, transfer pricing documentation, and customs compliance for enterprise operations.
+          </p>
+
+          <!-- Executive Metrics Grid -->
+          <div class="ebook-stats-pills">
+            <div class="stat-pill-item">
+              <span class="stat-pill-num">36 Pages</span>
+              <span class="stat-pill-label">Print Length</span>
+            </div>
+            <div class="stat-pill-item">
+              <span class="stat-pill-num">9 Chapters</span>
+              <span class="stat-pill-label">Deep Dives</span>
+            </div>
+            <div class="stat-pill-item">
+              <span class="stat-pill-num">6 Phases</span>
+              <span class="stat-pill-label">Roadmap</span>
+            </div>
+          </div>
+
+          <!-- Card Actions -->
+          <div class="ebook-card-actions">
+            <a href="/ebooks/enterprise-tax-statutory-trade-advisory.html" class="btn-action-primary">
+              Read Full E-Book Online &rarr;
+            </a>
+            <button onclick="openDownloadModal('Enterprise Tax Risk Management & Cross-Border Trade')" class="btn-action-outline" title="Download Executive PDF">
+              📥 PDF
+            </button>
+          </div>
+        </div>
+      </article>
+    
+      <article class="ebook-3d-card" data-category="industrial" data-title="industrial ehs & environmental regulatory defensibility environmental & ehs advisory vp manufacturing, head of ehs, plant operations directors">
+        <!-- 3D Book Cover / Spine Header -->
+        <div class="book-spine-wrapper">
+          <div>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <span class="book-badge-edition">Industrial Safety Manual</span>
+              <span class="book-gold-seal">★ Verified GRC</span>
+            </div>
+            <div style="font-size: 11px; font-weight: 700; color: #94A3B8; text-transform: uppercase; letter-spacing: 0.05em; margin-top: 12px;">
+              Environmental & EHS Advisory
+            </div>
+            <h3 class="book-cover-title">
+              Industrial EHS & Environmental Regulatory Defensibility
+            </h3>
+          </div>
+          <div class="book-cover-meta-row">
+            <span>By GOVENICS Environmental & Industrial Safety Practice</span>
+            <span>Vol. 2026.1</span>
+          </div>
+        </div>
+
+        <!-- Book Metadata & Description -->
+        <div class="ebook-card-content">
+          <div class="ebook-persona-tag">
+            <span>🎯 Target:</span>
+            <span>VP Manufacturing</span>
+          </div>
+
+          <p class="ebook-synopsis">
+            An operational manual for manufacturing leaders to manage Pollution Control Board consents, hazardous effluent tracking, OSHA safety guidelines, and unannounced environmental inspections.
+          </p>
+
+          <!-- Executive Metrics Grid -->
+          <div class="ebook-stats-pills">
+            <div class="stat-pill-item">
+              <span class="stat-pill-num">38 Pages</span>
+              <span class="stat-pill-label">Print Length</span>
+            </div>
+            <div class="stat-pill-item">
+              <span class="stat-pill-num">9 Chapters</span>
+              <span class="stat-pill-label">Deep Dives</span>
+            </div>
+            <div class="stat-pill-item">
+              <span class="stat-pill-num">6 Phases</span>
+              <span class="stat-pill-label">Roadmap</span>
+            </div>
+          </div>
+
+          <!-- Card Actions -->
+          <div class="ebook-card-actions">
+            <a href="/ebooks/industrial-ehs-regulatory-compliance-guide.html" class="btn-action-primary">
+              Read Full E-Book Online &rarr;
+            </a>
+            <button onclick="openDownloadModal('Industrial EHS & Environmental Regulatory Defensibility')" class="btn-action-outline" title="Download Executive PDF">
+              📥 PDF
+            </button>
+          </div>
+        </div>
+      </article>
+    
+      <article class="ebook-3d-card" data-category="trade" data-title="supply chain & third-party vendor risk governance supply chain & vendor governance chief procurement officers, head of vendor risk, vp supply chain">
+        <!-- 3D Book Cover / Spine Header -->
+        <div class="book-spine-wrapper">
+          <div>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <span class="book-badge-edition">Procurement Risk Playbook</span>
+              <span class="book-gold-seal">★ Verified GRC</span>
+            </div>
+            <div style="font-size: 11px; font-weight: 700; color: #94A3B8; text-transform: uppercase; letter-spacing: 0.05em; margin-top: 12px;">
+              Supply Chain & Vendor Governance
+            </div>
+            <h3 class="book-cover-title">
+              Supply Chain & Third-Party Vendor Risk Governance
+            </h3>
+          </div>
+          <div class="book-cover-meta-row">
+            <span>By GOVENICS Supply Chain & Third-Party Risk Advisory</span>
+            <span>Vol. 2026.1</span>
+          </div>
+        </div>
+
+        <!-- Book Metadata & Description -->
+        <div class="ebook-card-content">
+          <div class="ebook-persona-tag">
+            <span>🎯 Target:</span>
+            <span>Chief Procurement Officers</span>
+          </div>
+
+          <p class="ebook-synopsis">
+            How enterprise procurement and compliance leaders eliminate third-party compliance blind spots, conduct automated vendor audits, and insulate operations from supplier insolvency and reputational damage.
+          </p>
+
+          <!-- Executive Metrics Grid -->
+          <div class="ebook-stats-pills">
+            <div class="stat-pill-item">
+              <span class="stat-pill-num">36 Pages</span>
+              <span class="stat-pill-label">Print Length</span>
+            </div>
+            <div class="stat-pill-item">
+              <span class="stat-pill-num">9 Chapters</span>
+              <span class="stat-pill-label">Deep Dives</span>
+            </div>
+            <div class="stat-pill-item">
+              <span class="stat-pill-num">6 Phases</span>
+              <span class="stat-pill-label">Roadmap</span>
+            </div>
+          </div>
+
+          <!-- Card Actions -->
+          <div class="ebook-card-actions">
+            <a href="/ebooks/enterprise-supply-chain-vendor-governance.html" class="btn-action-primary">
+              Read Full E-Book Online &rarr;
+            </a>
+            <button onclick="openDownloadModal('Supply Chain & Third-Party Vendor Risk Governance')" class="btn-action-outline" title="Download Executive PDF">
+              📥 PDF
+            </button>
+          </div>
+        </div>
+      </article>
+    
+      <article class="ebook-3d-card" data-category="trade" data-title="global trade, export controls & sanctions compliance export & global trade advisory vp global trade, export compliance officers, head of international logistics">
+        <!-- 3D Book Cover / Spine Header -->
+        <div class="book-spine-wrapper">
+          <div>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <span class="book-badge-edition">Global Trade Advisory Series</span>
+              <span class="book-gold-seal">★ Verified GRC</span>
+            </div>
+            <div style="font-size: 11px; font-weight: 700; color: #94A3B8; text-transform: uppercase; letter-spacing: 0.05em; margin-top: 12px;">
+              Export & Global Trade Advisory
+            </div>
+            <h3 class="book-cover-title">
+              Global Trade, Export Controls & Sanctions Compliance
+            </h3>
+          </div>
+          <div class="book-cover-meta-row">
+            <span>By GOVENICS Global Trade & Export Control Practice</span>
+            <span>Vol. 2026.1</span>
+          </div>
+        </div>
+
+        <!-- Book Metadata & Description -->
+        <div class="ebook-card-content">
+          <div class="ebook-persona-tag">
+            <span>🎯 Target:</span>
+            <span>VP Global Trade</span>
+          </div>
+
+          <p class="ebook-synopsis">
+            Essential strategic guidance for exporters navigating complex dual-use technology classifications (SCOMET/EAR), multilateral sanctions compliance, end-user verification, and customs audit readiness.
+          </p>
+
+          <!-- Executive Metrics Grid -->
+          <div class="ebook-stats-pills">
+            <div class="stat-pill-item">
+              <span class="stat-pill-num">34 Pages</span>
+              <span class="stat-pill-label">Print Length</span>
+            </div>
+            <div class="stat-pill-item">
+              <span class="stat-pill-num">9 Chapters</span>
+              <span class="stat-pill-label">Deep Dives</span>
+            </div>
+            <div class="stat-pill-item">
+              <span class="stat-pill-num">6 Phases</span>
+              <span class="stat-pill-label">Roadmap</span>
+            </div>
+          </div>
+
+          <!-- Card Actions -->
+          <div class="ebook-card-actions">
+            <a href="/ebooks/global-trade-export-controls-sanctions.html" class="btn-action-primary">
+              Read Full E-Book Online &rarr;
+            </a>
+            <button onclick="openDownloadModal('Global Trade, Export Controls & Sanctions Compliance')" class="btn-action-outline" title="Download Executive PDF">
+              📥 PDF
+            </button>
+          </div>
+        </div>
+      </article>
+    
+      <article class="ebook-3d-card" data-category="industrial" data-title="enterprise licensing & statutory permits management licensing & permits management head of corporate real estate, vp operations, compliance operations managers">
+        <!-- 3D Book Cover / Spine Header -->
+        <div class="book-spine-wrapper">
+          <div>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <span class="book-badge-edition">Multi-Site Operations Guide</span>
+              <span class="book-gold-seal">★ Verified GRC</span>
+            </div>
+            <div style="font-size: 11px; font-weight: 700; color: #94A3B8; text-transform: uppercase; letter-spacing: 0.05em; margin-top: 12px;">
+              Licensing & Permits Management
+            </div>
+            <h3 class="book-cover-title">
+              Enterprise Licensing & Statutory Permits Management
+            </h3>
+          </div>
+          <div class="book-cover-meta-row">
+            <span>By GOVENICS Licensing & Statutory Operations Practice</span>
+            <span>Vol. 2026.1</span>
+          </div>
+        </div>
+
+        <!-- Book Metadata & Description -->
+        <div class="ebook-card-content">
+          <div class="ebook-persona-tag">
+            <span>🎯 Target:</span>
+            <span>Head of Corporate Real Estate</span>
+          </div>
+
+          <p class="ebook-synopsis">
+            A comprehensive operational framework for multi-site organizations to track, renew, and defend hundreds of municipal, fire, environmental, and operational operating licenses without lapse.
+          </p>
+
+          <!-- Executive Metrics Grid -->
+          <div class="ebook-stats-pills">
+            <div class="stat-pill-item">
+              <span class="stat-pill-num">32 Pages</span>
+              <span class="stat-pill-label">Print Length</span>
+            </div>
+            <div class="stat-pill-item">
+              <span class="stat-pill-num">9 Chapters</span>
+              <span class="stat-pill-label">Deep Dives</span>
+            </div>
+            <div class="stat-pill-item">
+              <span class="stat-pill-num">6 Phases</span>
+              <span class="stat-pill-label">Roadmap</span>
+            </div>
+          </div>
+
+          <!-- Card Actions -->
+          <div class="ebook-card-actions">
+            <a href="/ebooks/enterprise-licensing-statutory-permits-guide.html" class="btn-action-primary">
+              Read Full E-Book Online &rarr;
+            </a>
+            <button onclick="openDownloadModal('Enterprise Licensing & Statutory Permits Management')" class="btn-action-outline" title="Download Executive PDF">
+              📥 PDF
+            </button>
+          </div>
+        </div>
+      </article>
+    
+      <article class="ebook-3d-card" data-category="governance" data-title="commercial escrow & m&a governance playbook commercial escrow services chief financial officers, general counsel, private equity operating partners">
+        <!-- 3D Book Cover / Spine Header -->
+        <div class="book-spine-wrapper">
+          <div>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <span class="book-badge-edition">M&A Transaction Advisory</span>
+              <span class="book-gold-seal">★ Verified GRC</span>
+            </div>
+            <div style="font-size: 11px; font-weight: 700; color: #94A3B8; text-transform: uppercase; letter-spacing: 0.05em; margin-top: 12px;">
+              Commercial Escrow Services
+            </div>
+            <h3 class="book-cover-title">
+              Commercial Escrow & M&A Governance Playbook
+            </h3>
+          </div>
+          <div class="book-cover-meta-row">
+            <span>By GOVENICS Escrow & Capital Governance Practice</span>
+            <span>Vol. 2026.1</span>
+          </div>
+        </div>
+
+        <!-- Book Metadata & Description -->
+        <div class="ebook-card-content">
+          <div class="ebook-persona-tag">
+            <span>🎯 Target:</span>
+            <span>Chief Financial Officers</span>
+          </div>
+
+          <p class="ebook-synopsis">
+            Essential guidance for dealmakers, CFOs, and general counsel on leveraging neutral escrow architectures to safeguard M&A indemnity funds, IP transfers, project milestones, and regulatory deposits.
+          </p>
+
+          <!-- Executive Metrics Grid -->
+          <div class="ebook-stats-pills">
+            <div class="stat-pill-item">
+              <span class="stat-pill-num">34 Pages</span>
+              <span class="stat-pill-label">Print Length</span>
+            </div>
+            <div class="stat-pill-item">
+              <span class="stat-pill-num">9 Chapters</span>
+              <span class="stat-pill-label">Deep Dives</span>
+            </div>
+            <div class="stat-pill-item">
+              <span class="stat-pill-num">6 Phases</span>
+              <span class="stat-pill-label">Roadmap</span>
+            </div>
+          </div>
+
+          <!-- Card Actions -->
+          <div class="ebook-card-actions">
+            <a href="/ebooks/commercial-escrow-m-and-a-statutory-governance.html" class="btn-action-primary">
+              Read Full E-Book Online &rarr;
+            </a>
+            <button onclick="openDownloadModal('Commercial Escrow & M&A Governance Playbook')" class="btn-action-outline" title="Download Executive PDF">
+              📥 PDF
+            </button>
+          </div>
+        </div>
+      </article>
+    
+      <article class="ebook-3d-card" data-category="governance" data-title="enterprise risk management & board oversight handbook enterprise risk management (cro suite) chief risk officers, vp internal audit, board risk committee members">
+        <!-- 3D Book Cover / Spine Header -->
+        <div class="book-spine-wrapper">
+          <div>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <span class="book-badge-edition">Board Risk Committee Compendium</span>
+              <span class="book-gold-seal">★ Verified GRC</span>
+            </div>
+            <div style="font-size: 11px; font-weight: 700; color: #94A3B8; text-transform: uppercase; letter-spacing: 0.05em; margin-top: 12px;">
+              Enterprise Risk Management (CRO Suite)
+            </div>
+            <h3 class="book-cover-title">
+              Enterprise Risk Management & Board Oversight Handbook
+            </h3>
+          </div>
+          <div class="book-cover-meta-row">
+            <span>By GOVENICS Enterprise Risk Practice</span>
+            <span>Vol. 2026.1</span>
+          </div>
+        </div>
+
+        <!-- Book Metadata & Description -->
+        <div class="ebook-card-content">
+          <div class="ebook-persona-tag">
+            <span>🎯 Target:</span>
+            <span>Chief Risk Officers</span>
+          </div>
+
+          <p class="ebook-synopsis">
+            An executive methodology for Chief Risk Officers to institutionalize COSO and ISO 31000 frameworks, quantify strategic and operational risks, and embed dynamic risk scoring into business decisions.
+          </p>
+
+          <!-- Executive Metrics Grid -->
+          <div class="ebook-stats-pills">
+            <div class="stat-pill-item">
+              <span class="stat-pill-num">40 Pages</span>
+              <span class="stat-pill-label">Print Length</span>
+            </div>
+            <div class="stat-pill-item">
+              <span class="stat-pill-num">9 Chapters</span>
+              <span class="stat-pill-label">Deep Dives</span>
+            </div>
+            <div class="stat-pill-item">
+              <span class="stat-pill-num">6 Phases</span>
+              <span class="stat-pill-label">Roadmap</span>
+            </div>
+          </div>
+
+          <!-- Card Actions -->
+          <div class="ebook-card-actions">
+            <a href="/ebooks/enterprise-risk-management-cro-handbook.html" class="btn-action-primary">
+              Read Full E-Book Online &rarr;
+            </a>
+            <button onclick="openDownloadModal('Enterprise Risk Management & Board Oversight Handbook')" class="btn-action-outline" title="Download Executive PDF">
+              📥 PDF
+            </button>
+          </div>
+        </div>
+      </article>
+    
+      <article class="ebook-3d-card" data-category="industrial" data-title="managed compliance & outsourced grc operations staffing & managed compliance chief operating officers, chief hr officers, vp shared services">
+        <!-- 3D Book Cover / Spine Header -->
+        <div class="book-spine-wrapper">
+          <div>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <span class="book-badge-edition">GRC Operational Execution Guide</span>
+              <span class="book-gold-seal">★ Verified GRC</span>
+            </div>
+            <div style="font-size: 11px; font-weight: 700; color: #94A3B8; text-transform: uppercase; letter-spacing: 0.05em; margin-top: 12px;">
+              Staffing & Managed Compliance
+            </div>
+            <h3 class="book-cover-title">
+              Managed Compliance & Outsourced GRC Operations
+            </h3>
+          </div>
+          <div class="book-cover-meta-row">
+            <span>By GOVENICS Managed Compliance & Talent Advisory</span>
+            <span>Vol. 2026.1</span>
+          </div>
+        </div>
+
+        <!-- Book Metadata & Description -->
+        <div class="ebook-card-content">
+          <div class="ebook-persona-tag">
+            <span>🎯 Target:</span>
+            <span>Chief Operating Officers</span>
+          </div>
+
+          <p class="ebook-synopsis">
+            How leading enterprises eliminate internal compliance bottlenecks by deploying embedded GRC specialists, managed statutory filing pods, and high-velocity compliance shared service centers.
+          </p>
+
+          <!-- Executive Metrics Grid -->
+          <div class="ebook-stats-pills">
+            <div class="stat-pill-item">
+              <span class="stat-pill-num">32 Pages</span>
+              <span class="stat-pill-label">Print Length</span>
+            </div>
+            <div class="stat-pill-item">
+              <span class="stat-pill-num">9 Chapters</span>
+              <span class="stat-pill-label">Deep Dives</span>
+            </div>
+            <div class="stat-pill-item">
+              <span class="stat-pill-num">6 Phases</span>
+              <span class="stat-pill-label">Roadmap</span>
+            </div>
+          </div>
+
+          <!-- Card Actions -->
+          <div class="ebook-card-actions">
+            <a href="/ebooks/managed-compliance-outsourced-grc-operations.html" class="btn-action-primary">
+              Read Full E-Book Online &rarr;
+            </a>
+            <button onclick="openDownloadModal('Managed Compliance & Outsourced GRC Operations')" class="btn-action-outline" title="Download Executive PDF">
+              📥 PDF
+            </button>
+          </div>
+        </div>
+      </article>
+    
+    </div>
+  </main>
+
+  <!-- Bottom Executive Advisory Callout -->
+  <section style="background: #0B1B3D; color: #FFFFFF; padding: 60px 20px; border-top: 1px solid rgba(255,255,255,0.1); text-align: center;">
+    <div style="max-width: 720px; margin: 0 auto;">
+      <h2 style="font-family: 'Plus Jakarta Sans', sans-serif; font-size: 26px; font-weight: 800; margin-bottom: 12px;">
+        Need Enterprise Regulatory Defensibility Advisory?
+      </h2>
+      <p style="font-size: 14px; color: #CBD5E1; line-height: 1.6; margin-bottom: 24px;">
+        Connect directly with GOVENICS senior partners to conduct an independent statutory health-check, design automated compliance vaults, and protect director defensibility across multi-entity holding groups.
+      </p>
+      <a href="https://govnics-murex.vercel.app/" target="_blank" class="btn-cta-consult">
+        Schedule CFO / Board Compliance Assessment &rarr;
+      </a>
+    </div>
+  </section>
+
+  <!-- Global Footer -->
+  <footer style="background: #060D1F; color: #94A3B8; padding: 36px 20px; font-size: 12px; border-top: 1px solid #1E293B; text-align: center;">
+    <div style="max-width: 1240px; margin: 0 auto;">
+      <p style="color: #CBD5E1; font-weight: 600; margin-bottom: 8px;">GOVENICS GRC Consulting &bull; A Division of ISI Group &bull; Established 1985</p>
+      <p style="margin-bottom: 16px;">Enterprise Governance, Risk Management, Regulatory Compliance, ESG &amp; Internal Audit Advisory.</p>
+      <div style="display: flex; justify-content: center; gap: 20px; font-size: 12px;">
+        <a href="/" style="color: #94A3B8;">Practice Blogs</a>
+        <a href="/resources/ebooks" style="color: #94A3B8;">E-Book Library</a>
+        <a href="https://govnics-murex.vercel.app/" target="_blank" style="color: #94A3B8;">Corporate Website</a>
+        <a href="/sitemap.xml" style="color: #94A3B8;">Sitemap</a>
+      </div>
+      <p style="color: #475569; margin-top: 20px;">&copy; 2026 GOVENICS GRC Advisory. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Global Lead Capture Modal -->
+  <div id="downloadModal" class="download-gate-modal">
+    <div class="download-gate-content">
+      <button onclick="closeDownloadModal()" class="close-modal">&times;</button>
+      <div style="text-align: center; margin-bottom: 16px;">
+        <span style="font-size: 28px;">📥</span>
+        <h3 style="font-family: 'Plus Jakarta Sans', sans-serif; font-size: 18px; font-weight: 800; color: #0B1B3D; margin-top: 8px;">
+          Download Executive E-Book PDF
+        </h3>
+        <p style="font-size: 12px; color: #64748B; margin-top: 4px;" id="modalBookTitle">
+          Complete verified research publication with implementation frameworks and checklists.
+        </p>
+      </div>
+      <form onsubmit="handleDownloadSubmit(event)" style="display: flex; flex-direction: column; gap: 12px;">
+        <div>
+          <label style="display: block; font-size: 11px; font-weight: 700; color: #334155; margin-bottom: 4px;">Full Name *</label>
+          <input type="text" required placeholder="e.g. Jane Gracy" style="width: 100%; padding: 8px 12px; font-size: 12px; border: 1px solid #CBD5E1; border-radius: 6px; outline: none;">
+        </div>
+        <div>
+          <label style="display: block; font-size: 11px; font-weight: 700; color: #334155; margin-bottom: 4px;">Corporate Email *</label>
+          <input type="email" required placeholder="name@company.com" style="width: 100%; padding: 8px 12px; font-size: 12px; border: 1px solid #CBD5E1; border-radius: 6px; outline: none;">
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
+          <div>
+            <label style="display: block; font-size: 11px; font-weight: 700; color: #334155; margin-bottom: 4px;">Company *</label>
+            <input type="text" required placeholder="Enterprise Corp" style="width: 100%; padding: 8px 12px; font-size: 12px; border: 1px solid #CBD5E1; border-radius: 6px; outline: none;">
+          </div>
+          <div>
+            <label style="display: block; font-size: 11px; font-weight: 700; color: #334155; margin-bottom: 4px;">Designation *</label>
+            <input type="text" required placeholder="CFO / CCO / Director" style="width: 100%; padding: 8px 12px; font-size: 12px; border: 1px solid #CBD5E1; border-radius: 6px; outline: none;">
+          </div>
+        </div>
+        <button type="submit" style="background: var(--eb-royal); color: #FFF; font-weight: 700; font-size: 13px; padding: 10px; border-radius: 6px; border: none; cursor: pointer; margin-top: 6px;">
+          Instant Download PDF &rarr;
+        </button>
+        <p style="font-size: 10px; color: #94A3B8; text-align: center;">We respect your privacy. No spam guarantee.</p>
+      </form>
+    </div>
+  </div>
+
   <script src="/assets/js/nav-drawer.js"></script>
+  <script>
+    // Search & Filter Controller
+    const searchInput = document.getElementById('ebookSearchInput');
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const cards = document.querySelectorAll('.ebook-3d-card');
+    const countDisplay = document.getElementById('ebookCountDisplay');
+
+    let currentFilter = 'all';
+
+    function filterCards() {
+      const query = (searchInput ? searchInput.value : '').toLowerCase().trim();
+      let visible = 0;
+
+      cards.forEach(card => {
+        const cat = card.getAttribute('data-category');
+        const text = card.getAttribute('data-title');
+        const matchCat = (currentFilter === 'all' || cat === currentFilter);
+        const matchSearch = (!query || text.includes(query));
+
+        if (matchCat && matchSearch) {
+          card.style.display = 'flex';
+          visible++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+
+      if (countDisplay) {
+        countDisplay.textContent = `${visible} Publication${visible === 1 ? '' : 's'}`;
+      }
+    }
+
+    if (searchInput) searchInput.addEventListener('input', filterCards);
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => {
+          b.classList.remove('active', 'bg-blue-700', 'text-white', 'border-blue-700');
+          b.classList.add('bg-slate-50', 'text-slate-700', 'border-slate-300');
+        });
+        btn.classList.add('active', 'bg-blue-700', 'text-white', 'border-blue-700');
+        btn.classList.remove('bg-slate-50', 'text-slate-700', 'border-slate-300');
+        currentFilter = btn.getAttribute('data-filter');
+        filterCards();
+      });
+    });
+
+    // Modal Control
+    function openDownloadModal(title) {
+      document.getElementById('modalBookTitle').innerText = title;
+      document.getElementById('downloadModal').style.display = 'flex';
+    }
+    function closeDownloadModal() {
+      document.getElementById('downloadModal').style.display = 'none';
+    }
+    function handleDownloadSubmit(e) {
+      e.preventDefault();
+      alert('Thank you for requesting this executive publication. Initializing your print / PDF generation...');
+      closeDownloadModal();
+      window.print();
+    }
+  </script>
 </body>
 </html>
