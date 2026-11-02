@@ -101,7 +101,7 @@
           <button onclick="window.print()" class="btn-reader-action">
             <span>🖨️ Print / Save Full PDF</span>
           </button>
-          <button onclick="openDownloadModal('Enterprise Data Privacy & Cyber Resilience Handbook')" class="btn-reader-action btn-reader-primary">
+          <button onclick="downloadPdfDirectly('enterprise-data-privacy-cyber-resilience', 'Enterprise Data Privacy & Cyber Resilience Handbook')" class="btn-reader-action btn-reader-primary">
             <span>📥 Download Verified PDF</span>
           </button>
         </div>
@@ -766,19 +766,32 @@
 
   <script src="/assets/js/nav-drawer.js"></script>
   <script>
-    function openDownloadModal(title) {
+    let currentPdfSlug = 'enterprise-data-privacy-cyber-resilience';
+
+    function downloadPdfDirectly(slug, title) {
+      const link = document.createElement('a');
+      link.href = '/assets/pdfs/' + slug + '.pdf';
+      link.download = slug + '.pdf';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+
+    function openDownloadModal(title, slug) {
+      currentPdfSlug = slug || 'enterprise-data-privacy-cyber-resilience';
       document.getElementById('modalBookTitle').innerText = title;
       document.getElementById('downloadModal').style.display = 'flex';
     }
+
     function closeDownloadModal() {
       document.getElementById('downloadModal').style.display = 'none';
     }
+
     function handleDownloadSubmit(e) {
       e.preventDefault();
-      alert('Thank you for requesting this executive publication. Initializing your print / PDF generation...');
       closeDownloadModal();
-      window.print();
+      downloadPdfDirectly(currentPdfSlug);
     }
-  </script>
+    </script>
 </body>
 </html>
