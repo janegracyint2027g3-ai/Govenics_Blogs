@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GOVENICS Insights – Governance, Risk &amp; Compliance Perspectives</title>
+  <meta name="description" content="Executive research, statutory compliance briefings, implementation roadmaps, and boardroom risk intelligence from GOVENICS GRC Consulting.">
+  <link rel="canonical" href="https://govnics-murex.vercel.app/blogs/">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="gov-nav">
+    <div class="nav-container">
+      <div class="nav-logo-group">
+        <a href="index.html">
+          <img src="assets/images/logo.png" alt="GOVENICS Logo" class="nav-logo">
+        </a>
+        <div class="nav-divider"></div>
+        <div>
+          <div class="nav-brand-title">GOVENICS Insights</div>
+          <div class="nav-heritage">A Division of ISI Group | Established 1985</div>
+        </div>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html" style="color:var(--royal-blue);font-weight:700;">All Insights</a>
+        <a href="#browse-offerings">Browse by Offering</a>
+        <a href="https://govnics-murex.vercel.app/" target="_blank">Official Website</a>
+        <a href="https://govnics-murex.vercel.app/contact" class="nav-cta-btn" target="_blank">Schedule Consultation</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hub-hero">
+    <div class="hero-content">
+      <span class="hero-badge">ENTERPRISE KNOWLEDGE HUB &bull; 78 PRACTICE ARTICLES</span>
+      <h1>GOVENICS Insights &bull; Governance, Risk &amp; Compliance Perspectives</h1>
+      <p>
+        Executive research, regulatory compliance compendiums, control frameworks, and defensibility strategies for senior leadership navigating complex statutory mandates.
+      </p>
+
+      <!-- Search & Multi-Filter Bar -->
+      <div class="search-filter-box">
+        <input type="text" id="searchInput" class="search-input" placeholder="Search insights by statutory keyword, topic, or regulation (e.g. DPDP, CLRA, BRSR, CFO)...">
+        
+        <select id="offeringFilter" class="filter-dropdown">
+          <option value="">All 13 Practice Offerings</option>
+          
+      <option value="regulatory-compliance">Regulatory Compliance Advisory</option>
+    
+      <option value="enterprise-governance">Enterprise Corporate Governance (CFO Suite)</option>
+    
+      <option value="cybersecurity-data">Cybersecurity & Data Protection (CISO Suite)</option>
+    
+      <option value="labour-employment">Labour & Employment Law Compliance</option>
+    
+      <option value="esg-sustainability">ESG & Sustainability Advisory</option>
+    
+      <option value="taxation-trade">Taxation & Trade Advisory</option>
+    
+      <option value="environmental-ehs">Environmental & EHS Advisory</option>
+    
+      <option value="supply-chain">Supply Chain & Vendor Governance</option>
+    
+      <option value="export-trade">Export & Global Trade Advisory</option>
+    
+      <option value="licensing-permits">Licensing & Permits Management</option>
+    
+      <option value="escrow-services">Commercial Escrow Services</option>
+    
+      <option value="risk-management">Enterprise Risk Management (CRO Suite)</option>
+    
+      <option value="staffing-managed">Staffing & Managed Compliance</option>
+    
+        </select>
+
+        <select id="angleFilter" class="filter-dropdown">
+          <option value="">All 6 Content Angles</option>
+          <option value="challenges-risks">Challenges &amp; Risks</option>
+          <option value="implementation-guide">Implementation Guides</option>
+          <option value="regulatory-updates">Regulatory Updates</option>
+          <option value="executive-insights">Executive Insights</option>
+          <option value="case-scenarios">Case Scenarios</option>
+          <option value="checklist-assessment">Checklists &amp; Audits</option>
+        </select>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content Layout -->
+  <main class="main-layout">
+
+    <!-- Offering Categories Navigation -->
+    <section id="browse-offerings" style="margin-bottom: 40px;">
+      <div class="section-header">
+        <div>
+          <h2>Browse Knowledge Hub by Offering</h2>
+          <div class="section-subtitle">Dedicated practices covering all 13 core enterprise consulting capabilities</div>
+        </div>
+        <span id="resultsCount" style="font-size:13px;font-weight:700;color:var(--royal-blue);">78 articles published</span>
+      </div>
+      <div class="category-pill-grid">
+        
+      <a href="offerings/regulatory-compliance.html" class="cat-pill">Regulatory Compliance</a>
+    
+      <a href="offerings/enterprise-governance.html" class="cat-pill">Corporate Governance</a>
+    
+      <a href="offerings/cybersecurity-data.html" class="cat-pill">Cybersecurity & Data Privacy</a>
+    
+      <a href="offerings/labour-employment.html" class="cat-pill">Labour & Employment</a>
+    
+      <a href="offerings/esg-sustainability.html" class="cat-pill">ESG & Sustainability</a>
+    
+      <a href="offerings/taxation-trade.html" class="cat-pill">Taxation & Trade</a>
+    
+      <a href="offerings/environmental-ehs.html" class="cat-pill">Environmental & EHS</a>
+    
+      <a href="offerings/supply-chain.html" class="cat-pill">Supply Chain Governance</a>
+    
+      <a href="offerings/export-trade.html" class="cat-pill">Export & Trade Advisory</a>
+    
+      <a href="offerings/licensing-permits.html" class="cat-pill">Licensing & Permits</a>
+    
+      <a href="offerings/escrow-services.html" class="cat-pill">Commercial Escrow</a>
+    
+      <a href="offerings/risk-management.html" class="cat-pill">Enterprise Risk Management</a>
+    
+      <a href="offerings/staffing-managed.html" class="cat-pill">Staffing & Managed Services</a>
+    
+      </div>
+    </section>
+
+    <!-- Dynamic Articles Grid (Filtered via search.js) -->
+    <section>
+      <div class="section-header">
+        <div>
+          <h2>Executive Intelligence Library</h2>
+          <div class="section-subtitle">Real-time searchable library of all 78 in-depth practice publications</div>
+        </div>
+      </div>
+
+      <div id="blogsGrid" class="blogs-grid">
+        
+      <article class="blog-card">
+        <div class="card-header-bar" style="background: #1D4ED8;"></div>
+        <div class="card-body">
+          <span class="card-category-pill" style="border-color:#1D4ED8;color:#1D4ED8;">Regulatory Compliance Advisory</span>
+          <h3 class="card-title"><a href="articles/regulatory-compliance-challenges-risks.html">Why Enterprise Regulatory Compliance Fails: Operational Breakdowns, Hidden Penalties & Board Exposure</a></h3>
+          <p class="card-excerpt">Comprehensive executive analysis on Regulatory Compliance Advisory. Explore industry challenges & business risks, regulatory frameworks, actionable controls, and risk mitigation strategies.</p>
+          <div class="card-meta">
+            <span>By GOVENICS Enterprise Advisory Team</span>
+            <span>9 min read</span>
+          </div>
+        </div>
+      </article>
+    
+      <article class="blog-card">
+        <div class="card-header-bar" style="background: #1D4ED8;"></div>
+        <div class="card-body">
+          <span class="card-category-pill" style="border-color:#1D4ED8;color:#1D4ED8;">Regulatory Compliance Advisory</span>
+          <h3 class="card-title"><a href="articles/regulatory-compliance-executive-insights.html">Boardroom Defensibility in Regulatory Compliance: Personal KMP Accountability & Capital Protection</a></h3>
+          <p class="card-excerpt">Comprehensive executive analysis on Regulatory Compliance Advisory. Explore executive & strategic insights, regulatory frameworks, actionable controls, and risk mitigation strategies.</p>
+          <div class="card-meta">
+            <span>By GOVENICS Enterprise Advisory Team</span>
+            <span>9 min read</span>
+          </div>
+        </div>
+      </article>
+    
+      <article class="blog-card">
+        <div class="card-header-bar" style="background: #0C2D9C;"></div>
+        <div class="card-body">
+          <span class="card-category-pill" style="border-color:#0C2D9C;color:#0C2D9C;">Enterprise Corporate Governance (CFO Suite)</span>
+          <h3 class="card-title"><a href="articles/enterprise-governance-challenges-risks.html">Why Enterprise Corporate Governance Fails: Operational Breakdowns, Hidden Penalties & Board Exposure</a></h3>
+          <p class="card-excerpt">Comprehensive executive analysis on Enterprise Corporate Governance (CFO Suite). Explore industry challenges & business risks, regulatory frameworks, actionable controls, and risk mitigation strategies.</p>
+          <div class="card-meta">
+            <span>By GOVENICS Enterprise Advisory Team</span>
+            <span>9 min read</span>
+          </div>
+        </div>
+      </article>
+    
+      <article class="blog-card">
+        <div class="card-header-bar" style="background: #0C2D9C;"></div>
+        <div class="card-body">
+          <span class="card-category-pill" style="border-color:#0C2D9C;color:#0C2D9C;">Enterprise Corporate Governance (CFO Suite)</span>
+          <h3 class="card-title"><a href="articles/enterprise-governance-executive-insights.html">Boardroom Defensibility in Corporate Governance: Personal KMP Accountability & Capital Protection</a></h3>
+          <p class="card-excerpt">Comprehensive executive analysis on Enterprise Corporate Governance (CFO Suite). Explore executive & strategic insights, regulatory frameworks, actionable controls, and risk mitigation strategies.</p>
+          <div class="card-meta">
+            <span>By GOVENICS Enterprise Advisory Team</span>
+            <span>9 min read</span>
+          </div>
+        </div>
+      </article>
+    
+      <article class="blog-card">
+        <div class="card-header-bar" style="background: #2563EB;"></div>
+        <div class="card-body">
+          <span class="card-category-pill" style="border-color:#2563EB;color:#2563EB;">Cybersecurity & Data Protection (CISO Suite)</span>
+          <h3 class="card-title"><a href="articles/cybersecurity-data-challenges-risks.html">Why Enterprise Cybersecurity & Data Privacy Fails: Operational Breakdowns, Hidden Penalties & Board Exposure</a></h3>
+          <p class="card-excerpt">Comprehensive executive analysis on Cybersecurity & Data Protection (CISO Suite). Explore industry challenges & business risks, regulatory frameworks, actionable controls, and risk mitigation strategies.</p>
+          <div class="card-meta">
+            <span>By GOVENICS Enterprise Advisory Team</span>
+            <span>9 min read</span>
+          </div>
+        </div>
+      </article>
+    
+      <article class="blog-card">
+        <div class="card-header-bar" style="background: #2563EB;"></div>
+        <div class="card-body">
+          <span class="card-category-pill" style="border-color:#2563EB;color:#2563EB;">Cybersecurity & Data Protection (CISO Suite)</span>
+          <h3 class="card-title"><a href="articles/cybersecurity-data-executive-insights.html">Boardroom Defensibility in Cybersecurity & Data Privacy: Personal KMP Accountability & Capital Protection</a></h3>
+          <p class="card-excerpt">Comprehensive executive analysis on Cybersecurity & Data Protection (CISO Suite). Explore executive & strategic insights, regulatory frameworks, actionable controls, and risk mitigation strategies.</p>
+          <div class="card-meta">
+            <span>By GOVENICS Enterprise Advisory Team</span>
+            <span>9 min read</span>
+          </div>
+        </div>
+      </article>
+    
+      </div>
+    </section>
+
+    <!-- Executive Newsletter & Consultation CTA -->
+    <section class="article-cta-box" style="margin-top: 60px;">
+      <h3>Subscribe to the GOVENICS Quarterly Regulatory Briefing</h3>
+      <p>
+        Join over 2,400+ CFOs, Chief Compliance Officers, and enterprise governance leaders receiving verified statutory updates and regulatory analysis directly to their inboxes.
+      </p>
+      <div class="cta-btn-group">
+        <a href="https://govnics-murex.vercel.app/contact" class="cta-btn-primary" target="_blank">Book a Strategy Session</a>
+        <a href="https://govnics-murex.vercel.app/" class="cta-btn-secondary" target="_blank">Visit Main Portal</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="gov-footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h4>GOVENICS GRC Consulting</h4>
+        <p style="font-size:13px;line-height:1.6;margin-bottom:14px;">
+          A Division of ISI Group | Established 1985.<br>
+          Helping organisations strengthen governance, manage regulatory complexity, reduce compliance gaps, and build operational accountability.
+        </p>
+        <p style="font-size:12px;color:#64748B;">Portal: <a href="https://govnics-murex.vercel.app/" target="_blank">govnics-murex.vercel.app</a></p>
+      </div>
+      <div class="footer-col">
+        <h4>Practice Verticals</h4>
+        <ul class="footer-links">
+          <li><a href="offerings/regulatory-compliance.html">Regulatory Compliance</a></li>
+          <li><a href="offerings/enterprise-governance.html">Corporate Governance (CFO)</a></li>
+          <li><a href="offerings/cybersecurity-data.html">Cybersecurity &amp; DPDP</a></li>
+          <li><a href="offerings/labour-employment.html">Labour &amp; Employment</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Specialized Advisory</h4>
+        <ul class="footer-links">
+          <li><a href="offerings/esg-sustainability.html">ESG &amp; Sustainability</a></li>
+          <li><a href="offerings/taxation-trade.html">Taxation &amp; Trade</a></li>
+          <li><a href="offerings/environmental-ehs.html">Environmental &amp; EHS</a></li>
+          <li><a href="offerings/supply-chain.html">Supply Chain &amp; Vendor Risk</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Institutional Governance</h4>
+        <ul class="footer-links">
+          <li><a href="offerings/escrow-services.html">Commercial Escrow Services</a></li>
+          <li><a href="offerings/risk-management.html">Enterprise Risk Management</a></li>
+          <li><a href="offerings/licensing-permits.html">Licensing &amp; Permits</a></li>
+          <li><a href="offerings/staffing-managed.html">Staffing &amp; Managed Compliance</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>&copy; 2026 GOVENICS GRC Consulting &bull; A Division of ISI Group. All rights reserved.</div>
+      <div>Knowledge &amp; Thought Leadership Platform</div>
+    </div>
+  </footer>
+
+  <script src="assets/js/search.js"></script>
+</body>
+</html>
