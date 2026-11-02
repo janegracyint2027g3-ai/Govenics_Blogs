@@ -19,5 +19,15 @@
         }
       ]
     }
+  ],
+  "routes": [
+    {
+      "src": "^/resources/ebooks/?$",
+      "dest": "/resources/ebooks/index.html"
+    },
+    {
+      "src": "^/ebooks/([^/]+)/?$",
+      "dest": "/ebooks/$1.html"
+    }
   ]
 }
