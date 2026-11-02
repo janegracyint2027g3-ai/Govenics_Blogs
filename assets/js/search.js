@@ -36,6 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
       <article class="blog-card">
         <div class="card-header-bar" style="background: ${blog.color || '#1D4ED8'};"></div>
         <div class="card-body">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;"><span class="article-type-pill pill-blog">📝 Practice Blog</span></div>
           <span class="card-category-pill" style="border-color: ${blog.color || '#BFDBFE'}; color: ${blog.color || '#1D4ED8'};">
             ${blog.offering_name}
           </span>

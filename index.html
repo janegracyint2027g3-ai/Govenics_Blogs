@@ -11,6 +11,30 @@
 <body>
 
   <!-- Navigation -->
+  
+  <!-- Top Content Type Switcher Bar -->
+  <div class="content-type-switch-bar">
+    <div class="switch-container">
+      <div class="content-switcher-tabs">
+        <span style="font-weight:700; color:#94A3B8; font-size:11px; text-transform:uppercase; letter-spacing:0.05em; margin-right:4px;">VIEW FORMAT:</span>
+        <a href="/" class="switch-tab active">
+          <span>📝 Practice Blogs</span>
+          <span class="tab-badge">78 Articles</span>
+        </a>
+        <a href="/resources/ebooks" class="switch-tab">
+          <span>📚 Executive E-Books</span>
+          <span class="tab-badge">13 Editions</span>
+        </a>
+      </div>
+      <div>
+        <button onclick="toggleSideDrawer(true)" class="side-drawer-toggle">
+          <span>📂 All Knowledge Topics & Practice Areas</span>
+          <span>☰</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
   <header class="gov-nav">
     <div class="nav-container">
       <div class="nav-logo-group">
@@ -24,10 +48,13 @@
         </div>
       </div>
       <nav class="nav-links">
-        <a href="index.html" style="color:var(--royal-blue);font-weight:700;">All Insights</a>
-        <a href="#browse-offerings">Browse by Offering</a>
+        <a href="/" style="color:var(--royal-blue);font-weight:700;">📝 Practice Blogs (78)</a>
+        <a href="/resources/ebooks" style="font-weight:700;color:#0F172A;">📚 E-Books Library (13)</a>
+        <a href="#browse-offerings">Offerings Directory</a>
         <a href="https://govnics-murex.vercel.app/" target="_blank">Official Website</a>
-        <a href="https://govnics-murex.vercel.app/contact" class="nav-cta-btn" target="_blank">Schedule Consultation</a>
+        <button onclick="toggleSideDrawer(true)" class="side-drawer-toggle" style="margin-left:8px;">
+          <span>Browse Panel ☰</span>
+        </button>
       </nav>
     </div>
   </header>
@@ -88,6 +115,20 @@
       </div>
     </div>
   </section>
+
+  <!-- Prominent In-Page Toggle Switcher -->
+  <div class="hub-content-toggle-wrap">
+    <div class="hub-content-toggle">
+      <a href="/" class="hub-toggle-btn active">
+        <span>📝 Practice Blogs & Articles</span>
+        <span class="btn-counter">78 Active</span>
+      </a>
+      <a href="/resources/ebooks" class="hub-toggle-btn">
+        <span>📚 Executive E-Book Library</span>
+        <span class="btn-counter">13 Editions</span>
+      </a>
+    </div>
+  </div>
 
   <!-- Main Content Layout -->
   <main class="main-layout">
@@ -284,5 +325,6 @@
   </footer>
 
   <script src="assets/js/search.js"></script>
+  <script src="assets/js/nav-drawer.js"></script>
 </body>
 </html>
