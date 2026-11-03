@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Content Repurposing Studio | GOVENICS Enterprise GRC Insights</title>
+  <meta name="description" content="Intelligent content repurposing engine transforming GOVENICS enterprise blogs into C-suite LinkedIn posts and broadcast-ready YouTube packages.">
+  <link rel="canonical" href="https://govenicsblogs.vercel.app/repurpose">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+  <!-- Top Content Type Switcher Bar -->
+  <div class="content-type-switch-bar">
+    <div class="switch-container">
+      <div class="content-switcher-tabs">
+        <span style="font-weight:700; color:#94A3B8; font-size:11px; text-transform:uppercase; letter-spacing:0.05em; margin-right:4px;">VIEW FORMAT:</span>
+        <a href="/" class="switch-tab">
+          <span>📝 Practice Blogs</span>
+          <span class="tab-badge">78 Articles</span>
+        </a>
+        <a href="/resources/ebooks" class="switch-tab">
+          <span>📚 Executive E-Books</span>
+          <span class="tab-badge">13 Editions</span>
+        </a>
+        <a href="/repurpose" class="switch-tab active">
+          <span>🚀 Repurposing Studio</span>
+          <span class="tab-badge">LinkedIn &amp; YouTube</span>
+        </a>
+      </div>
+      <div>
+        <button onclick="toggleSideDrawer(true)" class="side-drawer-toggle">
+          <span>📂 All Knowledge Topics &amp; Practice Areas</span>
+          <span>☰</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation -->
+  <header class="gov-nav">
+    <div class="nav-container">
+      <div class="nav-logo-group">
+        <a href="/">
+          <img src="/assets/images/logo.png" alt="GOVENICS Logo" class="nav-logo">
+        </a>
+        <div class="nav-divider"></div>
+        <div>
+          <div class="nav-brand-title">GOVENICS Content Studio</div>
+          <div class="nav-heritage">A Division of ISI Group | Established 1985</div>
+        </div>
+      </div>
+      <nav class="nav-links">
+        <a href="/" style="font-weight:600; color:#334155;">📝 Practice Blogs (78)</a>
+        <a href="/resources/ebooks" style="font-weight:600; color:#334155;">📚 E-Books (13)</a>
+        <a href="/repurpose" style="font-weight:800; color:#1D4ED8;">🚀 Content Studio</a>
+        <a href="https://govnics-murex.vercel.app/" target="_blank">Official Website</a>
+        <button onclick="toggleSideDrawer(true)" class="side-drawer-toggle" style="margin-left:8px;">
+          <span>Browse Panel ☰</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="engine-hero-section">
+    <div class="engine-hero-inner">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:16px;">
+        <div>
+          <span class="engine-badge">⚡ ENTERPRISE CONTENT REPURPOSING ENGINE • WO-214 &amp; WO-215</span>
+          <h1 class="engine-hero-title">Blog to LinkedIn &amp; YouTube Content Studio</h1>
+          <p class="engine-hero-subtitle">
+            Automatically transform 78 verified GOVENICS practice blogs across 13 offerings into 6 audience-specific C-suite LinkedIn posts and complete 4-format broadcast-ready YouTube packages.
+          </p>
+        </div>
+        <div style="display:flex;gap:10px;align-items:center;">
+          <button class="btn-action-primary" onclick="exportToMarkdown()" style="background:#2563EB;padding:10px 18px;font-size:13px;">
+            📥 Export to Markdown (.md)
+          </button>
+          <button class="btn-action-secondary" onclick="exportToJSON()" style="background:rgba(255,255,255,0.1);color:#FFFFFF;border-color:rgba(255,255,255,0.2);padding:10px 16px;font-size:13px;">
+            💾 Export JSON DB
+          </button>
+        </div>
+      </div>
+
+      <!-- Live Counters -->
+      <div class="engine-metrics-bar">
+        <div class="stat-counter-box">
+          <div class="stat-counter-number" id="stat-blogs-count">78</div>
+          <div class="stat-counter-label">Published Blogs Indexed</div>
+        </div>
+        <div class="stat-counter-box">
+          <div class="stat-counter-number" id="stat-li-count" style="color:#60A5FA;">30</div>
+          <div class="stat-counter-label">LinkedIn Posts Generated</div>
+        </div>
+        <div class="stat-counter-box">
+          <div class="stat-counter-number" id="stat-yt-count" style="color:#F87171;">5</div>
+          <div class="stat-counter-label">YouTube Packages Ready</div>
+        </div>
+        <div class="stat-counter-box">
+          <div class="stat-counter-number" id="stat-approved-count" style="color:#34D399;">35</div>
+          <div class="stat-counter-label">Total Approved Assets</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sticky Tabs Navigation Bar -->
+  <div class="engine-tabs-wrapper">
+    <div class="engine-tabs-inner">
+      <div class="engine-nav-tabs-group">
+        <button class="engine-nav-tab active" data-tab="blogs" onclick="switchTab('blogs')">
+          <span>📝 1. Existing Blogs Inventory</span>
+          <span class="engine-tab-badge">78</span>
+        </button>
+        <button class="engine-nav-tab" data-tab="linkedin" onclick="switchTab('linkedin')">
+          <span>💼 2. LinkedIn Content Studio (WO-214)</span>
+          <span class="engine-tab-badge">6 Per Blog</span>
+        </button>
+        <button class="engine-nav-tab" data-tab="youtube" onclick="switchTab('youtube')">
+          <span>🎥 3. YouTube Content Studio (WO-215)</span>
+          <span class="engine-tab-badge">4 Formats</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Container -->
+  <main class="engine-main-container">
+
+    <!-- ========================================================================= -->
+    <!-- PANEL 1: EXISTING BLOGS INVENTORY -->
+    <!-- ========================================================================= -->
+    <div class="engine-view-panel active" id="panel-blogs">
+      <!-- Filter Bar -->
+      <div class="engine-filter-bar">
+        <input 
+          type="text" 
+          placeholder="🔍 Search across 78 blogs by title, ID, keyword, or industry..." 
+          class="filter-search-input" 
+          oninput="handleSearch(this.value)"
+        >
+        <div style="font-size:12px;color:#64748B;font-weight:600;">
+          Filter by Offering:
+        </div>
+      </div>
+
+      <!-- Offering Filter Pills -->
+      <div id="offering-pills" style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px;"></div>
+
+      <!-- Blogs Grid -->
+      <div class="blogs-inventory-grid" id="blogs-inventory-grid"></div>
+    </div>
+
+    <!-- ========================================================================= -->
+    <!-- PANEL 2: LINKEDIN CONTENT STUDIO -->
+    <!-- ========================================================================= -->
+    <div class="engine-view-panel" id="panel-linkedin">
+      <!-- Filter Bar -->
+      <div class="engine-filter-bar">
+        <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;flex:1;">
+          <input 
+            type="text" 
+            placeholder="🔍 Search LinkedIn posts by headline, keyword, or blog..." 
+            class="filter-search-input" 
+            oninput="handleSearch(this.value)"
+          >
+          
+          <select class="status-select" style="padding:10px 12px;font-size:12px;" onchange="selectedAudienceFilter = this.value; renderLinkedInPanel();">
+            <option value="all">🎯 All 6 Target Audiences</option>
+            <option value="CEO / Managing Director">CEO / Managing Director</option>
+            <option value="CFO / Finance Controller">CFO / Finance Controller</option>
+            <option value="Chief Compliance Officer">Chief Compliance Officer</option>
+            <option value="Legal Head / Company Secretary">Legal Head / Company Secretary</option>
+            <option value="Operations / Plant Director">Operations / Plant Director</option>
+            <option value="Industry-specific decision-maker">Industry-specific decision-maker</option>
+          </select>
+
+          <select class="status-select" style="padding:10px 12px;font-size:12px;" onchange="selectedStatusFilter = this.value; renderLinkedInPanel();">
+            <option value="all">⚡ All Statuses</option>
+            <option value="Generated">Generated</option>
+            <option value="Under Review">Under Review</option>
+            <option value="Approved">Approved</option>
+            <option value="Published">Published</option>
+            <option value="Archived">Archived</option>
+          </select>
+        </div>
+
+        <button class="btn-action-primary" onclick="exportToMarkdown()">
+          📥 Export LinkedIn Posts (.md)
+        </button>
+      </div>
+
+      <!-- Instructions & Framework Card -->
+      <div style="background:#EFF6FF;border:1px solid #BFDBFE;border-radius:12px;padding:16px 20px;margin-bottom:24px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;">
+        <div>
+          <div style="font-weight:800;color:#1D4ED8;font-size:13px;display:flex;align-items:center;gap:6px;">
+            <span>📐 SPICED &amp; Operational Risk Teardown Frameworks Active</span>
+          </div>
+          <div style="font-size:12px;color:#3B82F6;margin-top:4px;">
+            All 6 posts adhere to strict 900–1,000 character length, zero hallucinated claims, authentic statutory citations, and executive-level consulting communication.
+          </div>
+        </div>
+        <span style="font-size:11px;font-weight:700;color:#1D4ED8;background:#DBEAFE;padding:6px 12px;border-radius:6px;">
+          ✓ Quality Controlled
+        </span>
+      </div>
+
+      <!-- LinkedIn Posts Grid -->
+      <div class="linkedin-posts-grid" id="linkedin-posts-grid"></div>
+    </div>
+
+    <!-- ========================================================================= -->
+    <!-- PANEL 3: YOUTUBE CONTENT STUDIO -->
+    <!-- ========================================================================= -->
+    <div class="engine-view-panel" id="panel-youtube">
+      <!-- Filter Bar -->
+      <div class="engine-filter-bar">
+        <input 
+          type="text" 
+          placeholder="🔍 Search YouTube packages by blog, topic, or offering..." 
+          class="filter-search-input" 
+          oninput="handleSearch(this.value)"
+        >
+        <button class="btn-action-primary" onclick="exportToMarkdown()" style="background:#DC2626;">
+          📥 Export YouTube Packages (.md)
+        </button>
+      </div>
+
+      <!-- YouTube Quality Guide Box -->
+      <div style="background:#FFF1F2;border:1px solid #FFE4E6;border-radius:12px;padding:16px 20px;margin-bottom:24px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;">
+        <div>
+          <div style="font-weight:800;color:#DC2626;font-size:13px;display:flex;align-items:center;gap:6px;">
+            <span>🎥 4 Complete Broadcast Video Formats Per Package</span>
+          </div>
+          <div style="font-size:12px;color:#E11D48;margin-top:4px;">
+            Includes YouTube Shorts (55s, 9:16), Explainer (3m 30s), Educational Masterclass (7m 15s) with scene-by-scene storyboards, and 5 ready-to-post Community feed posts.
+          </div>
+        </div>
+        <span style="font-size:11px;font-weight:700;color:#DC2626;background:#FEE2E2;padding:6px 12px;border-radius:6px;">
+          ✓ Scene Storyboard Included
+        </span>
+      </div>
+
+      <!-- YouTube Packages Grid -->
+      <div class="yt-packages-grid" id="youtube-packages-grid"></div>
+    </div>
+
+  </main>
+
+  <!-- Edit Post Modal -->
+  <div class="engine-modal-overlay" id="edit-modal">
+    <div class="engine-modal-dialog">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;">
+        <h3 style="font-weight:800;color:#0F172A;font-size:16px;" id="modal-post-title">Edit LinkedIn Post</h3>
+        <button onclick="closeEditModal()" style="background:none;border:none;font-size:20px;cursor:pointer;color:#94A3B8;">&times;</button>
+      </div>
+
+      <div style="margin-bottom:12px;">
+        <textarea 
+          id="modal-post-text" 
+          rows="14" 
+          style="width:100%;border:1px solid #CBD5E1;border-radius:8px;padding:12px;font-size:13px;line-height:1.6;font-family:inherit;outline:none;resize:vertical;"
+        ></textarea>
+      </div>
+
+      <div style="display:flex;justify-content:space-between;align-items:center;">
+        <div style="font-size:12px;color:#64748B;">
+          Character count: <strong id="modal-char-count" style="color:#1D4ED8;">0</strong> / 1,000 recommended
+        </div>
+        <div style="display:flex;gap:8px;">
+          <button class="btn-action-secondary" onclick="closeEditModal()">Cancel</button>
+          <button class="btn-action-primary" onclick="saveEditModal()">Save Changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="engine-toast" class="engine-toast"></div>
+
+  <!-- Side Navigation Drawer Component -->
+  <aside id="side-drawer" class="side-drawer" aria-label="Knowledge Topics Drawer">
+    <div class="drawer-header">
+      <div class="drawer-title-group">
+        <span class="drawer-badge">OFFERINGS &amp; PRACTICE AREAS</span>
+        <h2 class="drawer-title">Knowledge Directory</h2>
+      </div>
+      <button onclick="toggleSideDrawer(false)" class="drawer-close" aria-label="Close Drawer">&times;</button>
+    </div>
+    <div class="drawer-content">
+      <div class="drawer-section">
+        <div class="drawer-section-title">Content Formats</div>
+        <div class="drawer-links-group">
+          <a href="/" class="drawer-link">
+            <span>📝 Practice Blogs</span>
+            <span class="drawer-pill">78</span>
+          </a>
+          <a href="/resources/ebooks" class="drawer-link">
+            <span>📚 Executive E-Books</span>
+            <span class="drawer-pill">13</span>
+          </a>
+          <a href="/repurpose" class="drawer-link active">
+            <span>🚀 Content Repurposing Studio</span>
+            <span class="drawer-pill">Active</span>
+          </a>
+        </div>
+      </div>
+      <div class="drawer-section">
+        <div class="drawer-section-title">Direct Portals</div>
+        <div class="drawer-links-group">
+          <a href="https://govnics-murex.vercel.app/" target="_blank" class="drawer-link">Official Portal ↗</a>
+          <a href="https://govnics-murex.vercel.app/services/regulatory-compliance" target="_blank" class="drawer-link">Regulatory Advisory</a>
+          <a href="https://govnics-murex.vercel.app/services/data-privacy-dpdp" target="_blank" class="drawer-link">DPDP &amp; Cyber Defense</a>
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div id="drawer-backdrop" class="drawer-backdrop" onclick="toggleSideDrawer(false)"></div>
+
+  <!-- Scripts -->
+  <script src="/assets/js/nav-drawer.js"></script>
+  <script src="/assets/js/content-engine.js"></script>
+</body>
+</html>

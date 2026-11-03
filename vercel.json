@@ -22,6 +22,10 @@
   ],
   "routes": [
     {
+      "src": "^/repurpose/?$",
+      "dest": "/repurpose/index.html"
+    },
+    {
       "src": "^/resources/ebooks/?$",
       "dest": "/resources/ebooks/index.html"
     },
